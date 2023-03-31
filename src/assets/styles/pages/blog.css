@@ -1,0 +1,27 @@
+@import url("../../../Components/Carousel/carousel.css");
+@import url("../../../Components/HighlightNews/highlightNews.css");
+@import url("../../../Components/SearchBlog/searchBlog.css");
+@import url("../../../Components/Blog/blog.css");
+@import url("../../../Components/Newslatter/newslatter.css");
+@import url("../../../Components/AllBlog/allBlog.css");
+
+.blog_row .btn_blog {
+    display: none;
+}
+
+.blog_row {
+    width: 100%;
+}
+
+.blog_news_container {
+    justify-content: space-between;
+}
+
+strong#docs-internal-guid-49d6d183-7fff-a1cd-39d1-dffd859e8b17 {
+    position: sticky;
+    top: 100px;
+}
+
+#highlightNews {
+    background-color: #00000008;
+}

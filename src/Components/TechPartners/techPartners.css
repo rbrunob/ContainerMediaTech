@@ -1,0 +1,106 @@
+/* SECTION 08 */
+
+#techPartners {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.techpartners_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--margin-sm);
+    margin: 30px auto 0;
+    padding: var(--padding-default);
+    gap: 100px;
+}
+
+.techPartners_logos {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.techpartners_content {
+    width: 50%;
+    height: auto;
+}
+
+.techPartners_logos .logos_container {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.techPartners_logos .logos_container .logo_item {
+    width: 170px;
+    height: 80px;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.techPartners_logos .logos_container .logo_item img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.techpartners_content_container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.techpartners_content_container .title {
+    text-align: start;
+    width: 100%;
+    font-size: var(--lg);
+    color: var(--red);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.techpartners_content_container .description {
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--gray);
+}
+
+.techpartners_content_container .btn_techpartners {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    height: auto;
+    color: var(--white);
+    background-image: var(--gradient-red);
+    border-radius: 30px;
+    font-size: var(--xsm);
+    filter: brightness(1);
+    transition: var(--transition);
+    margin: 30px 0 0;
+}
+
+.techpartners_content_container .btn_techpartners:hover {
+    filter: brightness(0.8);
+}
+
+/* SECTION 08 */

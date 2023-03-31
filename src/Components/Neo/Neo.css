@@ -1,0 +1,56 @@
+/* SECTION 09 */
+
+#NEO {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.neo_row {
+    width: var(--margin-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: var(--padding-default);
+    gap: 50px;
+}
+
+.neo_content {
+    width: 80%;
+    height: auto;
+}
+
+.neo_logo {
+    width: 50%;
+    height: auto;
+}
+
+.neo_content .description_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.neo_content .description_container .description {
+    font-size: var(--lg);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.neo_content .description_container .description span {
+    font-weight: 800;
+}
+
+.neo_logo .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* SECTION 09 */

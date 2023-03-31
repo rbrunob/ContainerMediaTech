@@ -1,0 +1,10 @@
+@import url("../../../Components/PostNew/postNew.css");
+@import url("../../../Components/HighlightNews/highlightNews.css");
+
+#highlightNews {
+    background-color: #00000008;
+}
+
+#highlightNews .highlightnews_row {
+    width: var(--margin-lg);
+}

@@ -1,0 +1,275 @@
+/* PUBLICIDADE DINAMICA  */
+
+#dynamic_advertising {
+    background-color: #0d1017;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#dynamic_advertising .dynamic_advertising_row {
+    background-image: url(https://preprod.containermedia.com.br/containermediatech/src/assets/images/bg_dynamic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: var(--margin-sm);
+    margin: 0 auto;
+    padding: var(--padding-default);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dynamic_advertising_title {
+    width: 100%;
+    width: auto;
+    margin: 0;
+}
+
+.dynamic_advertising_title h5 {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f8f8ff;
+}
+
+.dynamic_advertising_title h5 span {
+    color: #D82242;
+}
+
+.dynamic_advertising_subtitle {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.dynamic_advertising_subtitle p {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #f8f8ff;
+}
+
+
+.container_dynamic {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_dynamic_middle {
+    display: block;
+    margin: 0 auto;
+}
+
+.middle_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: -90px;
+}
+
+.bezier_curves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.bezier_curves svg {
+    width: 396px;
+    height: 500px;
+    fill: transparent;
+}
+
+svg path {
+    stroke-width: 4px;
+    stroke: #D82242;
+}
+
+.bezier_curves:nth-child(1) {
+    width: 240px;
+    position: relative;
+    right: 145px;
+}
+
+
+.bezier_curves:nth-child(2) {
+    position: relative;
+    right: -185px;
+}
+
+.container_dynamic_side {
+    width: 500px;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: -40px;
+}
+
+.container_dynamic_side:nth-child(1) {
+    top: 0;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.container_dynamic_side .side_title {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container_dynamic_side .side_title h6 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    color: #D82242;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 20px;
+    width: 300px;
+    max-width: 300px;
+}
+
+.container_dynamic_side .side_title h6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f8f8ff;
+    bottom: 0;
+}
+
+.container_dynamic_side .side_item_num {
+    width: 380px;
+    height: auto;
+    max-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container_dynamic_side .side_item_num:nth-child(3) {
+    left: 30px;
+}
+
+.container_dynamic_side .side_item_num span {
+    font-weight: bold;
+    font-size: 110px;
+    text-align: center;
+    color: #D82242;
+}
+
+.container_dynamic_side .side_item_num p {
+    font-size: var(--md);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f8f8ff;
+    line-height: 23px;
+}
+
+.container_dynamic_side .side_item_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    width: 330px;
+}
+
+.container_dynamic_side .side_item_box:nth-child(1) {
+    right: -15px;
+}
+
+.container_dynamic_side .side_item_box:nth-child(4) {
+    right: -15px;
+}
+
+.container_dynamic_side .side_item_box:nth-child(2) {
+    right: 35px;
+}
+
+.container_dynamic_side .side_item_box:nth-child(3) {
+    right: 35px;
+}
+
+.container_dynamic_side .side_item_box p {
+    font-size: var(--sm);
+    font-weight: 400;
+    color: #f8f8ff;
+    text-align: right;
+}
+
+.side_item_box .side_circle {
+    background-color: #D82242;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    max-width: 85px;
+    max-height: 85px;
+    min-width: 85px;
+    min-height: 85px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side_item_box .side_circle::after {
+    content: '';
+    width: 95px;
+    height: 95px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #f8f8ff;
+    position: absolute;
+}
+
+.side_item_box .side_circle img {
+    width: 50%;
+}
+
+.container_dynamic_side .side_item_box:nth-child(4) .side_circle img {
+    position: absolute;
+    width: 100%;
+    margin: 14px 0px 0 14px;
+}
+
+.container_dynamic_side .side_item_box:nth-child(2) .side_circle img {
+    width: 70%;
+}
+
+.dynamic_advertising_footer {
+    width: 850px;
+    max-width: 850px;
+    height: auto;
+    margin: 0;
+    text-align: center;
+}
+
+.dynamic_advertising_footer span {
+    font-size: var(--md);
+    font-weight: 400;
+    color: #f8f8ff;
+    line-height: 25px;
+}
+
+/* PUBLICIDADE DINAMICA  */

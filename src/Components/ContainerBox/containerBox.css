@@ -1,0 +1,90 @@
+.containerbox_row .containerbox_image img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#containerBox {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.containerbox_row {
+    width: var(--margin-md);
+    margin: 0 auto;
+    padding: var(--padding-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.containerbox_row .containerbox_image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerbox_row .containerBox_content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.containerbox_row .containerBox_content .containerBox_texts {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerbox_row .containerBox_content .containerBox_texts .title {
+    font-size: var(--lg);
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 40px;
+    text-align: start;
+}
+
+.containerbox_row .containerBox_content .containerBox_texts .description {
+    font-size: var(--md);
+    line-height: 26px;
+    text-align: start;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.containerbox_row .containerBox_content .containerBox_btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.containerbox_row .containerBox_content .containerBox_btn a {
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 30px;
+    padding: 10px 0;
+    background-image: var(--gradient-red);
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--md);
+    color: var(--white);
+    transition: var(--transition);
+    filter: brightness(1);
+}
+
+.containerbox_row .containerBox_content .containerBox_btn a:hover {
+    filter: brightness(0.8);
+}

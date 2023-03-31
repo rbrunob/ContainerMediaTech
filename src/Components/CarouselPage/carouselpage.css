@@ -1,0 +1,122 @@
+.carouselpage_row .carousel_container .content_carousel .carousel_item img {
+    width: var(--cover-w);
+    height: var(--cover-h);
+    margin: 0 auto;
+}
+
+#carouselPage {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carouselpage_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: var(--padding-default);
+    margin: 0 auto;
+    width: var(--margin-md);
+}
+
+.carouselpage_row .title_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carouselpage_row .title_container .title {
+    font-size: var(--lg);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--red);
+    text-align: center;
+}
+
+.carouselpage_row .carousel_container {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.carouselpage_row .carousel_container .prev {
+    height: 30px;
+    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: -2px;
+}
+
+.carouselpage_row .carousel_container .prev::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-right: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+    border-radius: 0px 3px 4px 3px;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    transform: rotate(135deg);
+    z-index: 0;
+}
+
+.carouselpage_row .carousel_container .next {
+    height: 30px;
+    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    right: -2px;
+    z-index: 1;
+}
+
+.carouselpage_row .carousel_container .next::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-right: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+    border-radius: 0px 3px 4px 3px;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    transform: rotate(315deg);
+    z-index: 0;
+}
+
+.carouselpage_row .carousel_container .content_carousel {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.carouselpage_row .carousel_container .content_carousel .carousel_item {
+    width: calc(100% / 4);
+    flex: 1 0 auto;
+    display: flex;
+    margin: 0 20px;
+}

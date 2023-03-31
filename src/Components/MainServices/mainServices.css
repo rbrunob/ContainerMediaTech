@@ -1,0 +1,93 @@
+#mainServices {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.mainservices_row {
+    width: var(--margin-sm);
+    margin: 0 auto;
+    padding: var(--padding-default);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mainservices_row .title {
+    font-size: var(--lg);
+    font-weight: 400;
+    color: var(--red);
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.mainservices_row .container_mainservices {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainservices_row .container_mainservices .item {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 200px;
+    max-height: 200px;
+}
+
+.mainservices_row .container_mainservices .item .descriptions_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 90px;
+    max-height: 90px;
+    width: 100%;
+}
+
+.mainservices_row .container_mainservices .item .descriptions_item .title {
+    font-size: var(--md);
+    color: var(--black);
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.mainservices_row .container_mainservices .item .descriptions_item .description {
+    font-size: var(--sm);
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.mainservices_row .container_mainservices .item .image_item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.mainservices_row .container_mainservices .item .image_item img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

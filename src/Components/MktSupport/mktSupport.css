@@ -1,0 +1,60 @@
+#mktSupport {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(https://preprod.containermedia.com.br/containermediatech/src/assets/images/bg-marketing.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mktsupport_row {
+    width: var(--margin-sm);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-default);
+}
+
+.mktsupport_row .container_image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mktsupport_row .container_image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mktsupport_row .container_content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.mktsupport_row .container_content .title {
+    font-size: var(--xmd);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--red);
+    text-align: start;
+}
+
+.mktsupport_row .container_content .description {
+    font-size: var(--md);
+    line-height: 24px;
+    color: var(--gray);
+    font-weight: 400;
+    text-align: start;
+}

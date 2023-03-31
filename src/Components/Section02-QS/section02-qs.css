@@ -1,0 +1,60 @@
+#techBase {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--red);
+}
+
+.techbase_row {
+    width: var(--margin-md);
+    margin: 0 auto;
+    padding: var(--padding-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techbase_row .techbase_content {
+    width: 60%;
+    height: auto;
+    position: relative;
+}
+
+.techbase_row .techbase_content .title {
+    font-size: var(--lg);
+    color: var(--white);
+    line-height: 40px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.techbase_row .techbase_content .title span {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.techbase_row .techbase_image {
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techbase_row .techbase_image .image_container {
+    width: 500px;
+    height: 250px;
+    max-width: 500px;
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techbase_row .techbase_image .image_container img {
+    position: absolute;
+    top: -250px;
+    width: 100%;
+    height: auto;
+}

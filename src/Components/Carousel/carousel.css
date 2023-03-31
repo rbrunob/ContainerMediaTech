@@ -1,0 +1,19 @@
+#banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#banner .banner_row {
+    width: var(--full-w);
+    height: var(--full-h);
+    max-width: var(--full-w);
+    max-height: var(--full-h);
+    margin: 0 auto;
+}
+
+.banner_row img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

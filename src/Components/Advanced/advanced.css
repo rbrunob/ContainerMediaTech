@@ -1,0 +1,475 @@
+/* CDN ADVANCED */
+
+#advanced {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    background-image: url(https://preprod.containermedia.com.br/containermediatech/src/assets/images/bg-apoio-mkt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px -20px 20px 0px #0000005e;
+}
+
+#advanced .advanced_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--margin-md);
+    margin: 0 auto;
+    padding: var(--padding-default) 5%;
+}
+
+.advanced_row .title_section {
+    width: 100%;
+    height: auto;
+    margin: 0 0 60px;
+}
+
+.advanced_row .title_section p {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #757373;
+    margin: 0 0 10px 0;
+}
+
+.advanced_row .title_section h4 {
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #757373;
+    margin: 0 0 30px 0;
+}
+
+.advanced_row .title_section h4 span {
+    color: #D82242;
+}
+
+.advanced_infographic_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.advanced_infographic_container .infographic_container_circle {
+    position: relative;
+    width: 547px;
+    max-width: 547px;
+    max-height: 547px;
+    min-width: 547px;
+    min-height: 547px;
+    height: 547px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BORDAS */
+/* BORDA UM */
+
+.infographic_container_circle .advanced_itens {
+    width: 220px;
+    height: 185px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.infographic_container_circle .advanced_itens::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, #F2F2F2, #E5E5E5);
+    width: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    height: 100%;
+}
+
+/* BORDA UM */
+/* BORDA DOIS */
+
+.advanced_itens .advanced_item_container {
+    position: relative;
+    width: 215px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: url(#round);
+}
+
+.advanced_itens .advanced_item_container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* BORDA DOIS */
+/* BORDA TRES  */
+
+.advanced_itens .advanced_item_container .advanced_item_border {
+    position: relative;
+    width: 190px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+}
+
+.advanced_itens .advanced_item_container .advanced_item_border::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-image: linear-gradient(to left, #D9D9D9, #f8f8ff);
+}
+
+/* BORDA TRES  */
+/* BORDA QUATRO */
+
+.advanced_itens .advanced_item_container .advanced_item_border .advanced_item_box_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 183px;
+    height: 153px;
+    filter: url(#round);
+}
+
+.advanced_itens .advanced_item_container .advanced_item_border .advanced_item_box_icons::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, #DADADA, #FEFEFE);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 95% 65%, 5% 65%, 0% 50%);
+    width: 100%;
+    height: 100%;
+}
+
+/* BORDA QUATRO */
+/* BORDAS */
+
+/* ITEM MEIO */
+
+.advanced_item_middle {
+    width: 240px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: url(#round) drop-shadow(0px 0px 10px black);
+    z-index: 1;
+}
+
+.advanced_item_middle::before {
+    content: "";
+    position: absolute;
+    background-color: #7F7F7F;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.advanced_item_middle .border_item_middle {
+    width: 220px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: url(#round);
+}
+
+.advanced_item_middle .border_item_middle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8ff;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.advanced_item_middle .border_item_middle .item_middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -5px;
+}
+
+.advanced_item_middle .border_item_middle .item_middle img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+
+/* ITEM MEIO */
+
+.advanced_item_box_icons .advanced_item_box_description {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advanced_item_box_icons .advanced_item_box_description p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    color: #757373;
+    line-height: 25px;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.advanced_item_box_icons .advanced_item_box_description p span {
+    font-size: 15px;
+}
+
+.advanced_itens .advanced_item_container .advanced_item_border img {
+    position: relative;
+    bottom: -50px;
+    width: 40px;
+    height: auto;
+}
+
+/* TESTE POSICIONAMENTO */
+
+.advanced_itens:nth-child(1) {
+    top: 89px;
+    left: -2px;
+}
+
+.advanced_itens:nth-child(2) {
+    top: 274px;
+}
+
+.advanced_itens:nth-child(3) {
+    top: 368px;
+    left: 165px;
+}
+
+.advanced_itens:nth-child(4) {
+    top: 274px;
+    left: 330px;
+}
+
+.advanced_itens:nth-child(5) {
+    top: 89px;
+    left: 328px;
+}
+
+.advanced_itens:nth-child(6) {
+    left: 163px;
+    top: -6px;
+}
+
+.advanced_itens:nth-child(1):hover {
+    top: 85px;
+    left: -12px;
+}
+
+.advanced_itens:nth-child(2):hover {
+    top: 280px;
+    left: -10px;
+}
+
+.advanced_itens:nth-child(3):hover {
+    top: 378px;
+}
+
+.advanced_itens:nth-child(4):hover {
+    top: 280px;
+    left: 338px;
+}
+
+.advanced_itens:nth-child(5):hover {
+    top: 85px;
+    left: 340px;
+}
+
+.advanced_itens:nth-child(6):hover {
+    top: -16px;
+}
+
+/* TESTE POSICIONAMENTO */
+
+/* HOVER GRADIENT */
+.advanced_itens:nth-child(1):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+.advanced_itens:nth-child(2):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+.advanced_itens:nth-child(3):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+.advanced_itens:nth-child(4):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+.advanced_itens:nth-child(5):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+.advanced_itens:nth-child(6):hover .advanced_item_container::before {
+    background-color: #ff002f;
+}
+
+/* HOVER GRADIENT */
+
+/* GRADIENT */
+
+.advanced_itens:nth-child(1) .advanced_item_container::before {
+    transition: all .5s;
+    background-color: #D42142;
+}
+
+
+.advanced_itens:nth-child(2)::before {
+    background-image: linear-gradient(to right, #DEDEDE, #CBCBCB);
+}
+
+.advanced_itens:nth-child(2) .advanced_item_container::before {
+    background-color: #B31842;
+    transition: all .5s;
+}
+
+.advanced_itens:nth-child(3)::before {
+    background-image: linear-gradient(to right, #CECECE, #C1C1C1);
+}
+
+.advanced_itens:nth-child(3) .advanced_item_container::before {
+    background-color: #850D42;
+    transition: all .5s;
+}
+
+.advanced_itens:nth-child(4)::before {
+    background-image: linear-gradient(to right, #C5C5C5, #BFBFBF);
+}
+
+.advanced_itens:nth-child(4) .advanced_item_container::before {
+    background-color: #720A41;
+    transition: all .5s;
+}
+
+.advanced_itens:nth-child(5)::before {
+    background-image: linear-gradient(to right, #E1E1E1, #D4D4D4);
+}
+
+.advanced_itens:nth-child(5) .advanced_item_container::before {
+    background-color: #941240;
+    transition: all .5s;
+}
+
+.advanced_itens:nth-child(6)::before {
+    background-image: linear-gradient(to right, #F3F3F3, #E7E7E7);
+}
+
+.advanced_itens:nth-child(6) .advanced_item_container::before {
+    background-color: #C81E42;
+    transition: all .5s;
+}
+
+/* GRADIENT */
+
+/* DESCIRÇÕES */
+
+.infographic_container_circle .description_item_advanced {
+    position: absolute;
+    background-image: linear-gradient(to left, #c0c0c0, transparent);
+    padding: 10px 60px 10px 0;
+    width: 490px;
+}
+
+.infographic_container_circle .description_item_advanced p {
+    text-align: end;
+    font-size: var(--sm);
+    font-weight: 400;
+    color: #474747;
+    line-height: 20px;
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+}
+
+.description_item_advanced.experiencia {
+    right: 490px;
+    top: 130px;
+}
+
+.description_item_advanced.aovivo {
+    bottom: 120px;
+    left: -430px;
+}
+
+.description_item_advanced.dados {
+    bottom: 150px;
+    right: -440px;
+    background-image: linear-gradient(to right, #c0c0c0, transparent);
+    padding: 10px 0 10px 60px;
+}
+
+.description_item_advanced.dados p {
+    text-align: left;
+}
+
+.description_item_advanced.plataforma {
+    bottom: 325px;
+    right: -440px;
+    background-image: linear-gradient(to right, #c0c0c0, transparent);
+    padding: 10px 0 10px 60px;
+}
+
+.description_item_advanced.plataforma p {
+    text-align: left;
+}
+
+.description_item_advanced.abr {
+    top: 0px;
+    right: -260px;
+    background-image: linear-gradient(to right, #c0c0c0, transparent);
+    padding: 10px 0 10px 60px;
+}
+
+.description_item_advanced.abr p {
+    text-align: left;
+}
+
+/* DESCIRÇÕES */
+
+/* CDN ADVANCED */

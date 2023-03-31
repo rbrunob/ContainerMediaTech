@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* DEFAULT STYLES */
+
+:root {
+    --red: #D82242;
+    --middle-dark-red: #871227;
+    --dark-red: #6C1A28;
+    --black-red: #4C121C;
+    --white: #f8f8ff;
+    --black: #1D1D1D;
+    --black-blue: #1c242e;
+    --gray: #757373;
+    --dark-gray: #34373E;
+    --light-gray: #F0F0F0;
+    --ligh-gray-alpha: rgba(217, 217, 217, 0.65);
+
+    --gradient-gray: linear-gradient(to right, #CCCCCC, trasparent);
+    --gradient-red: linear-gradient(to left, #83182a, #d52240);
+
+    --xsm: 14px;
+    --sm: 16px;
+    --md: 18px;
+    --xmd: 24px;
+    --lg: 36px;
+    --xlg: 65px;
+    --xxlg: 75px;
+
+    --padding-default: 3% 0;
+    --transition: all .25s;
+
+    --poster-w: 350px;
+    --poster-h: 620px;
+    --cover-w: 400px;
+    --cover-h: 220px;
+    --full-w: 1914px;
+    --full-h: 628px;
+
+    --margin-lg: 60%;
+    --margin-md: 80%;
+    --margin-sm: 90%;
+    --margin-none: 100%;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 0px;
+    border: 3px solid var(--red);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+
+/* ANIMATIONS SCROL IMAGES */
+
+.out-in {
+    opacity: 0;
+    position: relative;
+}
+
+.out-in.top.show {
+    animation-name: outInTop;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.out-in.bottom.show {
+    animation-name: outInBottom;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.out-in.left.show {
+    animation-name: outInLeft;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.out-in.right.show {
+    animation-name: outInRight;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes outInTop {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes outInBottom {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes outInLeft {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes outInRight {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,15 @@
+#allBlog {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#allBlog .allblog_row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: var(--margin-md);
+    margin: 0 auto;
+    gap: 50px;
+    padding: var(--padding-default);
+}

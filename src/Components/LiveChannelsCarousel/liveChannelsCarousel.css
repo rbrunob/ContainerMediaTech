@@ -1,0 +1,122 @@
+/* SECTION 05 */
+
+#liveChannelsCarousel {
+    width: 100%;
+    height: auto;
+}
+
+.livechannelscarousel_row {
+    width: var(--margin-sm);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-default);
+    gap: 30px;
+}
+
+.descriptionlivechannels_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 60%;
+}
+
+.descriptionlivechannels_container .title {
+    font-size: var(--lg);
+    color: var(--red);
+    font-weight: 400;
+    text-align: center;
+}
+
+.descriptionlivechannels_container .description {
+    font-size: var(--md);
+    color: var(--gray);
+    line-height: 24px;
+    text-align: center;
+}
+
+.livechannel_carouselcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    padding: 15px 0;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item.active {
+    background: var(--red);
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item p {
+    color: var(--gray);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: var(--transition);
+    font-weight: 400;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item:hover {
+    background: var(--red);
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item:hover p {
+    color: var(--white);
+}
+
+.livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item.active p {
+    color: var(--white);
+}
+
+.livechannel_carouselcontainer .carouselcontainer_carousel {
+    position: relative;
+    width: 1400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_carousel .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_carousel .container .image_container {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.livechannel_carouselcontainer .carouselcontainer_carousel .container .image_container img {
+    width: 100%;
+    height: auto;
+}
+
+/* SECTION 05 */

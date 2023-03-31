@@ -1,0 +1,103 @@
+#mainSegments {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.mainsegments_row {
+    width: var(--margin-sm);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: var(--padding-default);
+}
+
+.mainsegments_row .title {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 0;
+}
+
+.mainsegments_row .title::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    background-color: var(--gray);
+    bottom: 0;
+}
+
+.mainsegments_row .title h5 {
+    font-size: var(--lg);
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--gray);
+    text-align: center;
+}
+
+.mainsegments_row .mainsegments_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mainsegments_content .mainsegments_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.mainsegments_content .mainsegments_item .item_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.mainsegments_content .mainsegments_item .item_image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.mainsegments_content .mainsegments_item .item_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.mainsegments_item .item_texts .item_title {
+    text-align: center;
+    color: var(--black);
+    font-size: var(--md);
+    font-weight: 500;
+}
+
+.mainsegments_item .item_texts .item_description {
+    font-size: var(--sm);
+    text-align: center;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 20px;
+}

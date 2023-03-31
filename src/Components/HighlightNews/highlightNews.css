@@ -1,0 +1,119 @@
+.highlights_item .item_image img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#highlightNews {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#highlightNews .highlightnews_row {
+    width: var(--margin-sm);
+    height: auto;
+    margin: 0 auto;
+    padding: var(--padding-default);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.highlightnews_row .title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: var(--lg);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--red);
+}
+
+.highlightnews_row .container_highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container_highlights .highlights_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    transition: var(--transition);
+    height: auto;
+    min-width: 250px;
+    padding: 10px 15px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.highlights_item .item_image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights_item .item_tag {
+    width: 100%;
+    height: auto;
+}
+
+.highlights_item .item_tag .tag {
+    font-size: var(--xsm);
+    color: var(--red);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.highlights_item .item_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px;
+}
+
+.highlights_item .item_content .content_title {
+    width: 100%;
+    height: auto;
+}
+
+.highlights_item .item_content .content_description {
+    width: 100%;
+    height: auto;
+}
+
+.highlights_item .item_content .content_title .title_content {
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: var(--md);
+    width: 100%;
+    height: auto;
+    color: var(--black);
+}
+
+.highlights_item .item_content .content_description .description_content {
+    font-size: var(--sm);
+    color: var(--gray);
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+    text-align: start;
+}
+
+.container_highlights .highlights_item:hover {
+    box-shadow: 0 0 10px #00000017;
+}

@@ -1,0 +1,100 @@
+/* SECTION 07 */
+
+#multiDevices {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url("https://preprod.containermedia.com.br/containermediatech/src/assets/images/bg-triangles.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.multidevices_row {
+    width: var(--margin-md);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-default);
+}
+
+.multidevices_content {
+    width: 50%;
+    height: auto;
+}
+
+.multidevices_image {
+    width: 50%;
+    height: auto;
+}
+
+.multidevices_content .content_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.multidevices_content .content_container .title {
+    font-size: var(--lg);
+    text-transform: uppercase;
+    text-align: start;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.multidevices_content .content_container .title span {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.multidevices_content .content_container .description {
+    font-size: var(--md);
+    text-align: start;
+    line-height: 24px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.multidevices_content .content_container .container_apps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.multidevices_content .content_container .container_apps a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 200px;
+}
+
+.multidevices_content .content_container .container_apps a img {
+    width: 100%;
+    height: auto;
+}
+
+.multidevices_image .container_image img {
+    width: 600px;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+}
+
+.multidevices_image .container_image {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* SECTION 07 */
