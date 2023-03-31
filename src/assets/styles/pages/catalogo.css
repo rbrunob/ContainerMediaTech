@@ -2,3 +2,23 @@
 @import url("../../../Components/Catalogos/catalogos.css");
 @import url("../../../Components/CarouselPage/carouselpage.css");
 @import url("../../../Components/Form/form.css");
+
+#carouselPage {
+    background-image: var(--gradient-red);
+}
+
+.carouselpage_row .carousel_container .prev::after {
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.carouselpage_row .carousel_container .prev::after {
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.carouselpage_row .carousel_container .content_carousel .carousel_item img {
+    width: var(--poster-w);
+    height: var(--poster-h);
+    margin: 0 auto;
+}
