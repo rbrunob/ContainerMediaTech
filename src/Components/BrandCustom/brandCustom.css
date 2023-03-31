@@ -129,17 +129,17 @@
 
 .description_item svg {
     width: 50px;
-    height: auto;
+    height: 50px;
     margin: 0 auto;
 }
 
 .description_item path {
-    stroke: var(--red);
     transition: var(--transition);
+    fill: var(--red);
 }
 
 .description_item:hover path {
-    stroke: var(--white);
+    fill: var(--white);
 }
 
 .description_item::before {

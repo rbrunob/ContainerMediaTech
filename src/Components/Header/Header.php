@@ -1,7 +1,7 @@
 <header>
     <div class="header_row">
         <div class="header_logo">
-            <a title="Container Media Tech" href="https://preprod.containermedia.com.br/containermediatech/index.php">
+            <a title="Container Media Tech" href="https://preprod.containermedia.com.br/containermediatech/index?page=1">
                 <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/logo_containermediatech.svg" alt="Logo Container Media Tech" loading="lazy" />
             </a>
         </div>
