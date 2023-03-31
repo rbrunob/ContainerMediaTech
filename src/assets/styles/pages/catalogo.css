@@ -16,7 +16,7 @@
     border-bottom: 2px solid var(--white);
 }
 
-.carouselpage_row .carousel_container .prev::before {
+.carouselpage_row .carousel_container .next::after {
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
 }

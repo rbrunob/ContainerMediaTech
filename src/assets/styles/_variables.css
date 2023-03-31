@@ -33,8 +33,8 @@
     --poster-h: 620px;
     --cover-w: 400px;
     --cover-h: 220px;
-    --full-w: 1914px;
-    --full-h: 628px;
+    --full-w: 100%;
+    --full-h: auto;
 
     --margin-lg: 60%;
     --margin-md: 80%;
