@@ -7,12 +7,16 @@
     background-image: var(--gradient-red);
 }
 
+.carouselpage_row .title_container .title {
+    color: var(--white);
+}
+
 .carouselpage_row .carousel_container .prev::after {
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
 }
 
-.carouselpage_row .carousel_container .prev::after {
+.carouselpage_row .carousel_container .prev::before {
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
 }
