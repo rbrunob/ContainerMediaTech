@@ -229,6 +229,8 @@ if (search) {
 
 const backButton = document.querySelector('[data-back]');
 
-backButton.addEventListener('click', () => {
-    history.go(-1);
-})
+if (backButton) {
+    backButton.addEventListener('click', () => {
+        history.go(-1);
+    })
+}
