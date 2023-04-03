@@ -131,3 +131,11 @@
     font-weight: 500;
     text-align: start;
 }
+
+.category_container .category_list .category a {
+    padding: 20px 10px;
+    color: var(--gray);
+    z-index: 1;
+    width: 100%;
+    cursor: pointer;
+}
