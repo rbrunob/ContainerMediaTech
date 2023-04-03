@@ -21,10 +21,19 @@ copyright.innerHTML = `<p>© Container Media Corp USA ${currentYear} - Todos os 
 const liveCarousel = document.getElementById('liveChannelsCarousel');
 
 if (liveCarousel) {
-
+    const carouselArea = document.querySelector(".carouselcontainer_carousel");
     const carouselContainer = document.querySelector(".carouselcontainer_carousel .container");
     const carouselItems = document.querySelectorAll(".container .image_container");
     const carouselButtons = document.querySelectorAll(".carouselcontainer_navigation .navigation_item");
+
+    let larguraArea = window.screen.width;
+
+    if (larguraArea <= 540) {
+        carouselArea.style.width = `${larguraArea}px`;
+    } else {
+        carouselArea.style.width = `${larguraArea - 100}px`;
+    }
+
 
     const itemWidth = carouselItems[0].offsetWidth; // PEGA O TAMANHO DO ITEM BASEADO NO PRIMEIRO ITEM DO ARRAY
 
@@ -46,7 +55,6 @@ if (liveCarousel) {
             moveCarousel(index);
         })
     })
-
 }
 
 // CAROUSEL W/ ARROWS

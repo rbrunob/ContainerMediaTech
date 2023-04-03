@@ -95,9 +95,10 @@
 
 .livechannel_carouselcontainer .carouselcontainer_carousel {
     position: relative;
-    width: 1400px;
+    width: auto;
     height: 350px;
     overflow: hidden;
+    max-width: 1400px;
 }
 
 .livechannel_carouselcontainer .carouselcontainer_carousel .container {
