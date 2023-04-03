@@ -51,3 +51,18 @@
 }
 
 /* SECTION 06 */
+
+@media screen and (max-width: 540px) {
+    .channels_row .title {
+        font-size: var(--xmd);
+    }
+
+    .channels_row .container_channels .channel_item {
+        width: 90px;
+        height: 70px;
+    }
+
+    .channels_row .container_channels {
+        justify-content: center;
+    }
+}

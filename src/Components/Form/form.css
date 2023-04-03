@@ -269,3 +269,82 @@
 .form_submit_container form input:focus {
     border: 2px solid var(--black);
 }
+
+@media screen and (max-width: 540px) {
+    .form_row {
+        flex-direction: column;
+    }
+
+    .form_step_container {
+        width: 100%;
+    }
+
+    .form_submit_container {
+        width: 100%;
+    }
+
+    .form_step_container .content {
+        width: 100%;
+    }
+
+    .form_step_container .content .titles {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .form_step_container .content .titles .title {
+        font-size: var(--xmd);
+        line-height: 26px;
+    }
+
+    .form_step_container .content .titles .description {
+        font-size: var(--sm);
+        line-height: 20px;
+    }
+
+    .form_step_container .content .steps_container {
+        width: 100%;
+        min-height: auto;
+        min-width: auto;
+    }
+
+    .form_step_container .content .steps_container .step_item {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+        min-height: auto;
+    }
+
+    .form_step_container .content .steps_container .step_item .step_content_container .step_description {
+        line-height: 20px;
+    }
+
+    .form_submit_container form {
+        width: 100%;
+        align-items: center;
+    }
+
+    .form_submit_container form .section {
+        flex-direction: column;
+    }
+
+    .form_submit_container form label {
+        font-size: var(--xsm);
+    }
+
+    .form_submit_container form .section:nth-child(2) label:nth-child(1) {
+        width: 100%;
+    }
+
+    .form_submit_container form .section:nth-child(2) label:nth-child(2) {
+        width: 100%;
+    }
+
+    .form_submit_container form .section .title_input {
+        font-size: var(--xsm);
+    }
+
+    .form_submit_container form .container_btn_form {
+        justify-content: center;
+    }
+}

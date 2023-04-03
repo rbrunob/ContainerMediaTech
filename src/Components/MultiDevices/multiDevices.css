@@ -98,3 +98,31 @@
 }
 
 /* SECTION 07 */
+
+@media screen and (max-width: 540px) {
+    .multidevices_row {
+        flex-direction: column;
+    }
+
+    .multidevices_content {
+        width: 100%;
+    }
+
+    .multidevices_content .content_container {
+        width: 100%;
+    }
+
+    .multidevices_image {
+        width: 100%;
+    }
+
+    .multidevices_image .container_image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .multidevices_image .container_image img {
+        width: 480px;
+        top: 0px;
+    }
+}

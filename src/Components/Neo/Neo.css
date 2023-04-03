@@ -54,3 +54,27 @@
 }
 
 /* SECTION 09 */
+
+@media screen and (max-width: 540px) {
+    .neo_row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .neo_content {
+        width: 100%;
+    }
+
+    .neo_content .description_container {
+        width: 100%;
+    }
+
+    .neo_content .description_container .description {
+        font-size: var(--xmd);
+        text-align: center;
+    }
+
+    .neo_logo {
+        width: 100%;
+    }
+}

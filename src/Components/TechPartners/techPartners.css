@@ -104,3 +104,43 @@
 }
 
 /* SECTION 08 */
+
+@media screen and (max-width: 540px) {
+    .techpartners_row {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .techPartners_logos {
+        width: 100%;
+    }
+
+    .techPartners_logos .logos_container {
+        width: 100%;
+    }
+
+    .techPartners_logos .logos_container .logo_item {
+        width: 155px;
+        height: 55px;
+    }
+
+    .techpartners_content {
+        width: 100%;
+    }
+
+    .techpartners_content_container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .techpartners_content_container .title {
+        text-align: center;
+        width: 100%;
+        font-size: var(--xmd);
+    }
+
+    .techpartners_content_container .description {
+        font-size: var(--sm);
+        text-align: center;
+    }
+}

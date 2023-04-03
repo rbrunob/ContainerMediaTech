@@ -66,3 +66,21 @@
 }
 
 /* SECTION 04 */
+
+@media screen and (max-width: 540px) {
+    .contentpartners_row .title {
+        font-size: var(--xmd);
+    }
+
+    .partners_container .partners_itens .partners_item {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .partners_container .partners_itens .partners_item {
+        width: 90px;
+        height: 50px;
+    }
+}

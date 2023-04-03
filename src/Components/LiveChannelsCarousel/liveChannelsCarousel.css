@@ -96,7 +96,7 @@
 .livechannel_carouselcontainer .carouselcontainer_carousel {
     position: relative;
     width: auto;
-    height: 350px;
+    height: auto;
     overflow: hidden;
     max-width: 1400px;
 }
@@ -121,3 +121,28 @@
 }
 
 /* SECTION 05 */
+
+@media screen and (max-width: 980px) {
+    .descriptionlivechannels_container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .descriptionlivechannels_container {
+        width: 100%;
+    }
+
+    .descriptionlivechannels_container .title {
+        font-size: var(--xmd);
+        line-height: 30px;
+    }
+
+    .descriptionlivechannels_container .description {
+        font-size: var(--sm);
+    }
+
+    .livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item p {
+        font-size: 18px;
+    }
+}
