@@ -38,4 +38,9 @@ strong#docs-internal-guid-49d6d183-7fff-a1cd-39d1-dffd859e8b17 {
         min-width: auto;
         min-height: auto;
     }
+
+    .blog_news_container {
+        justify-content: space-between;
+        gap: 80px;
+    }
 }
