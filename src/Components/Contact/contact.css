@@ -107,3 +107,114 @@
 }
 
 /* CONTACT */
+
+@media screen and (max-width: 540px) {
+
+    #contact {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-image: linear-gradient(to right, var(--red), var(--black-red));
+    }
+
+    #contact .contact_row {
+        width: var(--margin-md);
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15% 0;
+    }
+
+    .contact_row .contact_contents {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact_contents .contact_description {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact_contents .contact_description p {
+        font-size: var(--xmd);
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .contact_contents .contact_description p span {
+        font-weight: 600;
+        color: var(--white);
+    }
+
+
+    .contact_contents .contact_action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact_contents .contact_action p {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .contact_contents .contact_action a {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 300;
+        color: var(--red);
+        text-decoration: none;
+        background-color: var(--white);
+        width: 100%;
+        height: 70px;
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: var(--transition);
+    }
+
+    .contact_contents .contact_action a:hover {
+        color: var(--white);
+        background-color: var(--red);
+    }
+
+    .contact_contents .contact_action a:hover span {
+        color: var(--white);
+    }
+
+    .contact_contents .contact_action a span {
+        font-weight: bold;
+        color: var(--red);
+        transition: var(--transition);
+    }
+
+    .contact_contents .contact_action p:last-child {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .contact_contents .contact_action p:last-child span {
+        font-weight: bold;
+        color: var(--white);
+    }
+}

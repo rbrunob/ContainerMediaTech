@@ -473,3 +473,19 @@
 /* DESCIRÇÕES */
 
 /* CDN ADVANCED */
+
+@media screen and (max-width: 540px) {
+
+    .advanced_row .title_section p {
+        font-size: 26px;
+    }
+
+    .advanced_row .title_section h4 {
+        font-size: 28px;
+    }
+
+    .advanced_infographic_container {
+        display: none;
+    }
+
+}

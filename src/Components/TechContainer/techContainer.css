@@ -108,3 +108,113 @@
 }
 
 /* TECNOLOGIA CONTAINER */
+
+@media screen and (max-width: 540px) {
+    #tech_container {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #tech_container h1 {
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--gray);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 45px 0 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tech_container h1::after {
+        content: "";
+        border-bottom: 1px solid var(--gray);
+        width: 250px;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #tech_container .tech_row {
+        width: var(--margin-none);
+        height: auto;
+        margin: 0 auto;
+        padding: 3% 10%;
+        background-image: url(https://preprod.containermedia.com.br/containermediatech/src/assets/images/bg-tech-container.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tech_row .tech_content {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech_content .tech_about {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .tech_row .tech_content .tech_logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech_row .tech_content .tech_logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech_content .tech_about p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: var(--gray);
+        line-height: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tech_content .tech_about p span {
+        font-weight: bold;
+    }
+
+    .tech_content .tech_about .tech_list {
+        background-color: var(--ligh-gray-alpha);
+        padding: 30px;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .tech_content .tech_about .tech_list p {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: 500;
+        font-size: var(--xsm);
+    }
+
+    .tech_content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

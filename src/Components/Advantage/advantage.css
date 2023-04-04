@@ -609,3 +609,48 @@
 /* item $ */
 
 /* ADVANTAGE */
+
+@media screen and (max-width: 540px) {
+    .suportadvantage_row {
+        width: var(--margin-md);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--padding-default);
+        flex-direction: column;
+    }
+
+    .suport_content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+    }
+
+    .responsibilities_content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .responsibilities_container .responsibilities_steps_container {
+        width: 327px;
+        height: 378px;
+        max-width: 327px;
+        max-height: 378px;
+        border: 15px solid rgba(217, 217, 217, 0.65);
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        transform: scale(.9);
+    }
+}

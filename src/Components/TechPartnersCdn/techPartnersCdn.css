@@ -62,3 +62,80 @@
 }
 
 /* PARECEIROS DE TECNOLOGIA */
+
+@media screen and (max-width: 540px) {
+
+    #techpartners {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #techpartners .techpartners_row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--margin-sm);
+        margin: 10% auto 15%;
+        flex-direction: column;
+    }
+
+    .techpartners_row .techpartners_contents {
+        width: 100%;
+        height: auto;
+    }
+
+    .techpartners_row .techpartners_contents img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .techpartners_row .techpartners_contents h6 {
+        font-size: 30px;
+        color: var(--red);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding: 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .techpartners_row .techpartners_contents h6::after {
+        content: '';
+        width: 70%;
+        bottom: 10px;
+        position: absolute;
+        height: 1px;
+        background-color: var(--dark-gray);
+    }
+
+    .techpartners_row .techpartners_contents h6 span {
+        color: var(--dark-gray);
+    }
+
+    .techpartners_contents .container_techpartners {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 0px auto 0;
+        gap: 20px;
+    }
+
+    .techpartners_contents .container_techpartners .techpartner_itens {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

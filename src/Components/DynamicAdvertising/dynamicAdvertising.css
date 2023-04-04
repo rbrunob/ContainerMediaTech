@@ -273,3 +273,31 @@ svg path {
 }
 
 /* PUBLICIDADE DINAMICA  */
+
+@media screen and (max-width: 540px) {
+
+    #dynamic_advertising .dynamic_advertising_row {
+        background-image: none;
+    }
+
+    .container_dynamic {
+        display: none;
+    }
+
+    .dynamic_advertising_title h5 {
+        font-size: 28px;
+    }
+
+    .dynamic_advertising_subtitle p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .dynamic_advertising_footer {
+        width: 100%;
+    }
+
+    .dynamic_advertising_footer span {
+        font-size: var(--xsm);
+    }
+}
