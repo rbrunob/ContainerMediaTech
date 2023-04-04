@@ -77,4 +77,13 @@
     .neo_logo {
         width: 100%;
     }
+
+    .neo_logo .logo {
+        justify-content: center;
+    }
+
+    .neo_logo .logo img {
+        width: 180px;
+        margin: 10px auto 0;
+    }
 }

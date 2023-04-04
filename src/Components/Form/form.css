@@ -317,6 +317,7 @@
 
     .form_step_container .content .steps_container .step_item .step_content_container .step_description {
         line-height: 20px;
+        font-size: var(--xsm);
     }
 
     .form_submit_container form {

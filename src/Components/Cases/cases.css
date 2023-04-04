@@ -130,3 +130,39 @@
 .container_cases .item_cases .item_content .item_description .description span {
     font-size: var(--xsm);
 }
+
+@media screen and (max-width: 540px) {
+    .cases_row .title::before {
+        height: 1px;
+    }
+
+    .cases_row .title h2 {
+        font-size: var(--xmd);
+    }
+
+    .container_cases .item_cases {
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container_cases .item_cases .item_image {
+        width: 100%;
+    }
+
+    .container_cases .item_cases .item_content {
+        align-items: center;
+    }
+
+    .container_cases .item_cases .item_content .item_description .subtitle {
+        font-size: var(--sm);
+    }
+
+    .container_cases .item_cases .item_content .item_description .description {
+        font-size: var(--sm);
+    }
+
+    .container_cases .item_cases:nth-child(2n) {
+        flex-direction: column;
+    }
+}

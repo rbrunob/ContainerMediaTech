@@ -101,3 +101,29 @@
     color: var(--gray);
     line-height: 20px;
 }
+
+@media screen and (max-width: 540px) {
+    .mainsegments_row .title::before {
+        height: 1px;
+    }
+
+    .mainsegments_row .title h5 {
+        font-size: var(--xmd);
+    }
+
+    .mainsegments_row .mainsegments_content {
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .mainsegments_item .item_texts .item_title {
+        font-size: var(--sm);
+    }
+
+    .mainsegments_item .item_texts .item_description {
+        font-size: var(--xsm);
+        text-align: center;
+    }
+}

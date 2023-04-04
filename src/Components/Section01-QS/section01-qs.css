@@ -36,3 +36,24 @@
     line-height: 24px;
     text-align: start;
 }
+
+@media screen and (max-width: 540px) {
+    .quemsomos_row {
+        flex-direction: column;
+    }
+
+    .quemsomos_row .quemsomos_content {
+        align-items: center;
+        width: 100%;
+    }
+
+    .quemsomos_row .quemsomos_content .title {
+        font-size: var(--xmd);
+        text-align: center;
+    }
+
+    .quemsomos_row .quemsomos_content .description {
+        font-size: var(--sm);
+        text-align: center;
+    }
+}

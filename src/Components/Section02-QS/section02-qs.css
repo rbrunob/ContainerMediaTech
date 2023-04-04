@@ -58,3 +58,32 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 540px) {
+    .techbase_row {
+        flex-direction: column;
+    }
+
+    .techbase_row .techbase_content {
+        width: 100%;
+    }
+
+    .techbase_row .techbase_content .title {
+        font-size: var(--xmd);
+        line-height: 30px;
+    }
+
+    .techbase_row .techbase_image {
+        width: 100%;
+    }
+
+    .techbase_row .techbase_image .image_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .techbase_row .techbase_image .image_container img {
+        position: relative;
+        top: 0;
+    }
+}

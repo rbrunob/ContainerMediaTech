@@ -13,3 +13,10 @@
     gap: 50px;
     padding: var(--padding-default);
 }
+
+@media screen and (max-width: 540px) {
+    #allBlog .allblog_row {
+        width: var(--margin-sm);
+        flex-direction: column-reverse;
+    }
+}

@@ -8,6 +8,8 @@ if (urlPathname) {
     newUrl = urlOrigin;
 }
 
+var body = document.querySelector('body');
+
 // DATA ATUALIZADA DO FOOTER
 
 const copyright = document.querySelector(".copyright");
@@ -26,12 +28,12 @@ if (liveCarousel) {
     const carouselItems = document.querySelectorAll(".container .image_container");
     const carouselButtons = document.querySelectorAll(".carouselcontainer_navigation .navigation_item");
 
-    let larguraArea = window.screen.width;
+    let widthArea = window.screen.width;
 
-    if (larguraArea <= 540) {
-        carouselArea.style.width = `${larguraArea}px`;
+    if (widthArea <= 540) {
+        carouselArea.style.width = `${widthArea}px`;
     } else {
-        carouselArea.style.width = `${larguraArea - 100}px`;
+        carouselArea.style.width = `${widthArea - 100}px`;
     }
 
 
@@ -76,7 +78,18 @@ if (carouselPage) {
         carouselContainer.scrollLeft += carouselContainer.offsetWidth;
     });
 
-    let quantity = 3; // DEFINE A QUANTIDADE DE ITEM NO CARROSSEL
+    let screenWidth = window.screen.width; // DESCOBRE A LARGURA DA TELA
+    let quantity // DEFINE A QUANTIDADE DE ITEM NO CARROSSEL
+
+    if (screenWidth <= 540) { // CONDICIONAL PARA EXIBIR OS ITENS DE MANEIRA RESPONSIVA
+        quantity = 1;
+    } else if (screenWidth <= 980) {
+        quantity = 2;
+    } else {
+        quantity = 3;
+    }
+
+
     let itemWidth = 100 / quantity; // FAZ O TAMANHO TOTAL DO CONTAINER DIVIDIDO PELA QUANTIDADE DE ITENS
 
     carouselItems.forEach(item => {
@@ -251,4 +264,10 @@ const menuNav = document.querySelector('.nav_content');
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuNav.classList.toggle('active');
+
+    document.addEventListener('scroll', () => {
+        menu.classList.remove('active');
+        menuNav.classList.remove('active');
+    })
+
 })

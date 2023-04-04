@@ -82,3 +82,17 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+@media screen and (max-width: 540px) {
+    .newslatter_row {
+        width: var(--margin-sm);
+    }
+
+    .newslatter_row h4 {
+        font-size: var(--xmd);
+    }
+
+    .newslatter_row p {
+        font-size: var(--md);
+    }
+}

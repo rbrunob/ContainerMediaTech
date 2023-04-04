@@ -63,6 +63,6 @@
     }
 
     .channels_row .container_channels {
-        justify-content: center;
+        justify-content: space-between;
     }
 }

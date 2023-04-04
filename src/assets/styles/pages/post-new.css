@@ -8,3 +8,9 @@
 #highlightNews .highlightnews_row {
     width: var(--margin-lg);
 }
+
+@media screen and (max-width: 540px) {
+    #highlightNews .highlightnews_row {
+        width: var(--margin-sm);
+    }
+}

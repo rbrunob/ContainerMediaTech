@@ -139,3 +139,47 @@
     width: 100%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 540px) {
+    #searchBlog {
+        width: 100%;
+        max-width: 350px;
+        min-width: auto;
+        height: 100%;
+        position: unset;
+    }
+
+    #searchBlog .searchblog_row {
+        width: 100%;
+    }
+
+    .category_container .category_list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        flex-direction: unset;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .category_container .category_list .category {
+        width: 140px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        background-color: #00000008;
+    }
+
+    .category_container .category_list .category a {
+        padding: 10px;
+        color: var(--gray);
+        z-index: 1;
+        width: 100%;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}

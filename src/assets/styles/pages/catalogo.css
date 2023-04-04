@@ -23,6 +23,8 @@
 
 .carouselpage_row .carousel_container .content_carousel .carousel_item img {
     width: var(--poster-w);
-    height: var(--poster-h);
+    height: auto;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: var(--poster-h);
 }

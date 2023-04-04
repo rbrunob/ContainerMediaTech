@@ -180,3 +180,24 @@
 .postnew_content .backto .backto_button:hover {
     color: var(--red);
 }
+
+@media screen and (max-width: 540px) {
+    .postnew_row {
+        width: var(--margin-md);
+    }
+
+    .postnew_content .content_image .text_image {
+        height: 80px;
+    }
+
+    .postnew_content .content_image .text_image .text {
+        font-size: var(--md);
+        line-height: 20px;
+        width: 100%;
+        left: 10px;
+    }
+
+    .postnew_content .content_texts .texts {
+        font-size: var(--xsm);
+    }
+}

@@ -117,3 +117,9 @@
 .container_highlights .highlights_item:hover {
     box-shadow: 0 0 10px #00000017;
 }
+
+@media screen and (max-width: 540px) {
+    .highlightnews_row .container_highlights {
+        flex-direction: column;
+    }
+}

@@ -88,3 +88,41 @@
 .containerbox_row .containerBox_content .containerBox_btn a:hover {
     filter: brightness(0.8);
 }
+
+@media screen and (max-width: 540px) {
+    .containerbox_row {
+        flex-direction: column-reverse;
+    }
+
+    .containerbox_row .containerbox_image {
+        width: 100%;
+    }
+
+    .containerbox_row .containerBox_content {
+        width: 100%;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts {
+        align-items: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts .title {
+        font-size: var(--xmd);
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts .description {
+        font-size: var(--sm);
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_btn {
+        justify-content: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_btn a {
+        font-size: var(--sm);
+    }
+}

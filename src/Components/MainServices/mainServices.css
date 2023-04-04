@@ -91,3 +91,23 @@
     height: auto;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 540px) {
+    .mainservices_row .title {
+        font-size: var(--xmd);
+    }
+
+    .mainservices_row .container_mainservices {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mainservices_row .container_mainservices .item .descriptions_item .title {
+        font-size: var(--sm);
+    }
+
+    .mainservices_row .container_mainservices .item .descriptions_item .description {
+        font-size: var(--xsm);
+    }
+}

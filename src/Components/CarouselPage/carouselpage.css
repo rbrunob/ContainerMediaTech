@@ -1,7 +1,9 @@
 .carouselpage_row .carousel_container .content_carousel .carousel_item img {
     width: var(--cover-w);
-    height: var(--cover-h);
+    height: auto;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: var(--cover-h);
 }
 
 #carouselPage {
@@ -58,7 +60,7 @@
     position: absolute;
     cursor: pointer;
     z-index: 1;
-    left: -2px;
+    left: -10px;
 }
 
 .carouselpage_row .carousel_container .prev::after {
@@ -86,7 +88,7 @@
     flex-direction: column;
     position: absolute;
     cursor: pointer;
-    right: -2px;
+    right: -10px;
     z-index: 1;
 }
 
@@ -106,7 +108,7 @@
 
 .carouselpage_row .carousel_container .content_carousel {
     display: flex;
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin: 0 auto;
     overflow: hidden;

@@ -58,3 +58,31 @@
     font-weight: 400;
     text-align: start;
 }
+
+@media screen and (max-width: 540px) {
+    .mktsupport_row {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .mktsupport_row .container_image {
+        width: 100%;
+    }
+
+    .mktsupport_row .container_content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mktsupport_row .container_content .title {
+        font-size: var(--md);
+        text-align: center;
+    }
+
+    .mktsupport_row .container_content .description {
+        font-size: var(--sm);
+        text-align: center;
+    }
+}
