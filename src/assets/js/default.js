@@ -78,15 +78,6 @@ if (carouselPage) {
         carouselContainer.scrollLeft += carouselContainer.offsetWidth;
     });
 
-    // NEGATIVO E POSITIVO NO VALOR FAZ DAR O EFEITO DE IR PARA A DIREITA E ESQUERDA
-    prevButton.addEventListener('touchstart', () => {
-        carouselContainer.scrollLeft -= carouselContainer.offsetWidth;
-    });
-
-    nextButton.addEventListener('touchstart', () => {
-        carouselContainer.scrollLeft += carouselContainer.offsetWidth;
-    });
-
     let screenWidth = window.screen.width; // DESCOBRE A LARGURA DA TELA
     let quantity // DEFINE A QUANTIDADE DE ITEM NO CARROSSEL
 
