@@ -153,3 +153,9 @@ main {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 540px) {
+    :root {
+        --padding-default: 15% 0;
+    }
+}

@@ -242,3 +242,13 @@ if (backButton) {
         history.go(-1);
     })
 }
+
+// MENU MOBILE
+
+const menu = document.querySelector('.nav_menu');
+const menuNav = document.querySelector('.nav_content');
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuNav.classList.toggle('active');
+})

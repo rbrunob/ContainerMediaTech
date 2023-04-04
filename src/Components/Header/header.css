@@ -78,3 +78,96 @@ header .header_row {
 .header_nav .nav_item a:last-child:hover {
     filter: saturate(0.7);
 }
+
+.header_nav .nav_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .header_nav .nav_item {
+        display: none;
+    }
+
+    .header_nav .nav_mobile {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .header_row .header_nav {
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .header_nav .nav_mobile .nav_content {
+        right: -270px;
+        transition: all .3s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 230px;
+        background-color: var(--black);
+        height: 340px;
+        overflow: hidden;
+        padding: 0;
+        top: 55px;
+        box-shadow: 0px 10px 20px #00000091;
+    }
+
+    .header_nav .nav_mobile .nav_content.active {
+        right: -20px;
+    }
+
+    .nav_menu {
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav_menu .menu_line {
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        transition: all .3s;
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+
+    .header_nav .nav_mobile .nav_content a {
+        width: 100%;
+        padding: 10px;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_nav .nav_mobile .nav_content a:nth-child(2n) {
+        background: #ffffff08;
+    }
+
+    .header_nav .nav_mobile .nav_content a:last-child {
+        text-align: center;
+        border-radius: 30px;
+        height: auto;
+        background-image: var(--gradient-red);
+        width: 90%;
+        margin: 10px auto 0;
+    }
+
+    .nav_menu.active .menu_line:nth-child(1) {
+        transition-delay: .2s;
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+
+    .nav_menu.active .menu_line:nth-child(2) {
+        width: 0%;
+    }
+
+    .nav_menu.active .menu_line:nth-child(3) {
+        transition-delay: .2s;
+        transform: rotate(135deg) translate(-7px, 7px);
+    }
+}
