@@ -21,9 +21,11 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
 </head>
 
 <body>
-    <?php
+    <div id="google_translate_element" class="boxTradutor"></div>
 
-    include("./src/Components/Header/Header.php") ?>
+    <?php
+    include("./src/Components/Header/Header.php")
+    ?>
 
     <main>
         <?
