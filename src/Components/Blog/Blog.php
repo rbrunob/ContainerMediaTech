@@ -28,7 +28,7 @@
                         while ($row3 = $result3->fetch_assoc()) {
                     ?>
 
-                            <a href="index.php?page=8&title=<? echo $row3['link_post'] ?>" class="blog_news_item">
+                            <a href="blog/?title=<? echo $row3['link_post'] ?>" class="blog_news_item">
                                 <div class="blog_item_container">
                                     <div class="news_image">
                                         <img src="https://containermedia.com.br/assets/images/<? echo $row3['image_post']; ?>" alt="Notícia" loading="lazy" />

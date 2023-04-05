@@ -1,7 +1,7 @@
 <?php
 include("./src/includes/connection.php");
 include("./src/includes/get-components.php");
-
+$urlSite = "https://preprod.containermedia.com.br/containermediatech/";
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,10 +12,10 @@ include("./src/includes/get-components.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="UMA PLATAFORMA DE STREAMING PERSONALIZADA COM A SUA MARCA. CANAIS AO VIVO, CONTEÚDO VOD E APPS INTEGRADOS PARA SUA EMPRESA OFERTAR PARA O SEU CLIENTE." />
 
-    <link rel="stylesheet" href="./src/assets/styles/_reset.css" />
-    <link rel="stylesheet" href="./src/assets/styles/main.css" />
+    <link rel="stylesheet" href="<?echo $urlSite;?>/src/assets/styles/_reset.css" />
+    <link rel="stylesheet" href="<?echo $urlSite;?>/src/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="<? echo $classPage; ?>" />
+    <link rel="stylesheet" href="<?echo $urlSite;?><? echo $classPage; ?>" />
 
     <title><? echo $namePage ?></title>
 </head>

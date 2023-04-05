@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         array_push($id_sections, $row["id_section"]);
         array_push($sections, "./src/Components/" . $row['path_section']);
-        $classPage = './src/assets/styles/pages/' . $row['style_page'];
+        $classPage = '/src/assets/styles/pages/' . $row['style_page'];
         $namePage = $row['name_page'];
     }
 } else {
