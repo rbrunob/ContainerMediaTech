@@ -12,10 +12,10 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="UMA PLATAFORMA DE STREAMING PERSONALIZADA COM A SUA MARCA. CANAIS AO VIVO, CONTEÚDO VOD E APPS INTEGRADOS PARA SUA EMPRESA OFERTAR PARA O SEU CLIENTE." />
 
-    <link rel="stylesheet" href="<?echo $urlSite;?>/src/assets/styles/_reset.css" />
-    <link rel="stylesheet" href="<?echo $urlSite;?>/src/assets/styles/main.css" />
+    <link rel="stylesheet" href="<? echo $urlSite; ?>/src/assets/styles/_reset.css" />
+    <link rel="stylesheet" href="<? echo $urlSite; ?>/src/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="<?echo $urlSite;?><? echo $classPage; ?>" />
+    <link rel="stylesheet" href="<? echo $urlSite; ?><? echo $classPage; ?>" />
 
     <title><? echo $namePage ?></title>
 </head>
@@ -50,6 +50,40 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
     <!-- ROUND SVG -->
 
     <script src="./src/assets/js/default.js"></script>
+
+    <script type="text/javascript">
+        var languages = null;
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en,es,pt',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+
+            languages = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+        }
+
+        function changeEvent(element) {
+            if (element.fireEvent) {
+                element.fireEvent('onchange');
+            } else {
+                var evObj = document.createEvent("HTMLEvents");
+
+                evObj.initEvent("change", false, true);
+                element.dispatchEvent(evObj);
+            }
+        }
+
+        function changeLanguage(lang) {
+            if (languages) {
+                languages.value = lang;
+                changeEvent(languages);
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
