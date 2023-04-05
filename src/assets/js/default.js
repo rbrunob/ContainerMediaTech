@@ -175,6 +175,8 @@ if (search) {
     });
     // PESQUISA PELOS BOTÕES DE CATEGORIA
     const categoryButtons = document.querySelectorAll('[data-category]');
+    const blogStart = document.getElementById('allBlog');
+
     let lastElement;
     categoryButtons.forEach(button => {
         button.addEventListener('click', (e) => {
@@ -184,6 +186,8 @@ if (search) {
             const select = document.getElementsByClassName('category_list')[0].getElementsByClassName('selected')[0]
 
             containerBlog.innerHTML = '';
+
+            blogStart.scrollIntoView();
 
             const getCategory = async () => {
                 button.classList.add('selected');
@@ -271,3 +275,5 @@ menu.addEventListener('click', () => {
     })
 
 })
+
+// CONTAGEM DE ACESSOS AS NOTICIAS

@@ -10,28 +10,28 @@
                     <p>Categorias</p>
                 </div>
                 <div class="category">
-                    <a data-category="futebol" href="#blog">+ Futebol</a>
+                    <a data-category="futebol">+ Futebol</a>
                 </div>
                 <div class="category">
-                    <a data-category="imprensa" href="#blog">+ Imprensa</a>
+                    <a data-category="imprensa">+ Imprensa</a>
                 </div>
                 <div class="category">
-                    <a data-category="marketing" href="#blog">+ Marketing</a>
+                    <a data-category="marketing">+ Marketing</a>
                 </div>
                 <div class="category">
-                    <a data-category="negocios" href="#blog">+ Negócios</a>
+                    <a data-category="negocios">+ Negócios</a>
                 </div>
                 <div class="category">
-                    <a data-category="provedores" href="#blog">+ Provedores</a>
+                    <a data-category="provedores">+ Provedores</a>
                 </div>
                 <div class="category">
-                    <a data-category="publicidade" href="#blog">+ Publicidade</a>
+                    <a data-category="publicidade">+ Publicidade</a>
                 </div>
                 <div class="category">
-                    <a data-category="tecnologia" href="#blog">+ Tecnologia</a>
+                    <a data-category="tecnologia">+ Tecnologia</a>
                 </div>
                 <div class="category">
-                    <a data-category="streaming" href="#blog">+ Streaming</a>
+                    <a data-category="streaming">+ Streaming</a>
                 </div>
             </div>
         </div>
