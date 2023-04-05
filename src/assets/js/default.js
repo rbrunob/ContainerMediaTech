@@ -148,7 +148,7 @@ if (search) {
 
                         let news = document.createElement('a');
 
-                        news.setAttribute('href', newUrl + response[i].link_post)
+                        news.setAttribute('href', newUrl + '/index.php?page=8&title=' + response[i].link_post)
                         news.classList.add('blog_news_item')
 
                         news.innerHTML = `
@@ -222,7 +222,7 @@ if (search) {
 
                         let news = document.createElement('a');
 
-                        news.setAttribute('href', newUrl + categoriesResponse[i].link_post)
+                        news.setAttribute('href', newUrl + '/index.php?page=8&title=' + categoriesResponse[i].link_post)
                         news.classList.add('blog_news_item')
 
                         news.innerHTML = `
