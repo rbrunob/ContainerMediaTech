@@ -70,6 +70,19 @@ main {
     top: 80px;
 }
 
+#google_translate_element {
+    display: none;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    position: static !important;
+    top: 0 !important;
+}
+
 
 /* ANIMATIONS SCROL IMAGES */
 
