@@ -50,7 +50,7 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
     </svg>
     <!-- ROUND SVG -->
 
-    <script src="./src/assets/js/default.js"></script>
+    <script src="<? echo $urlSite; ?>/src/assets/js/default.js"></script>
 </body>
 
 </html>
