@@ -1,10 +1,11 @@
 <?php
 $page = $_GET['page'];
+$language = $_GET['language'];
 
 $query = "SELECT * FROM page_section
 INNER JOIN pages ON page_section.`page_id` = pages.id_page
 INNER JOIN sections ON page_section.`section_id` = sections.id_section
-WHERE page_id = $page ORDER BY position_page_section ASC";
+WHERE page_id = $page AND language_id = $language ORDER BY position_page_section ASC";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {

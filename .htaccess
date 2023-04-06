@@ -11,20 +11,20 @@ RewriteRule ^ %1 [R,NC]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php
 
-RewriteRule ^home$ ./index.php?page=1
+RewriteRule ^home$ ./index.php?page=1&language=1
 
-RewriteRule ^$ ./index.php?page=1
+RewriteRule ^$ ./index.php?page=1&language=1
 
-RewriteRule ^quem-somos$ ./index.php?page=2
+RewriteRule ^quem-somos$ ./index.php?page=2&language=1
 
-RewriteRule ^cdn$ ./index.php?page=3
+RewriteRule ^cdn$ ./index.php?page=3&language=1
 
-RewriteRule ^cases$ ./index.php?page=4
+RewriteRule ^cases$ ./index.php?page=4&language=1
 
-RewriteRule ^personalizacao$ ./index.php?page=5
+RewriteRule ^personalizacao$ ./index.php?page=5&language=1
 
-RewriteRule ^catalogo$ ./index.php?page=6
+RewriteRule ^catalogo$ ./index.php?page=6&language=1
 
-RewriteRule ^blog$ ./index.php?page=7
+RewriteRule ^blog$ ./index.php?page=7&language=1
 
-RewriteRule ^blog/([a-z0-9]+)?$ ./index.php?page=8&title=$1 [NC,QSA] 
+RewriteRule ^blog/([a-z0-9]+)?$ ./index.php?page=8&title=$1&language=1 [NC,QSA] 
