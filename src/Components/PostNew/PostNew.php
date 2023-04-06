@@ -19,11 +19,19 @@ if (isset($_SERVER['HTTP_REFERER'])) {
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
 ?>
+        <div id="google_translate_element" class="boxTradutor"></div>
         <section id="postNew">
             <div class="postnew_row">
                 <div class="postnew_content">
                     <div class="backto">
-                        <button class="backto_button" data-back><? echo $LastPagetitle ?></button> <span class="current_page">/ <? echo $row['title_post'] ?></span>
+                        <div>
+                            <button class="backto_button" data-back><? echo $LastPagetitle ?></button> <span class="current_page">/ <? echo $row['title_post'] ?></span>
+                        </div>
+                        <div class="items_lang">
+                            <a href="javascript:changeLanguage('pt')" class="item_lang"><img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/logo-pt-br.png" alt="Português" /></a>
+                            <a href="javascript:changeLanguage('en')" class="item_lang"><img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/logo-en-uk.png" alt="Inglês" /></a>
+                            <a href="javascript:changeLanguage('es')" class="item_lang"><img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/logo-es.png" alt="Espanhol" /></a>
+                        </div>
                     </div>
                     <div class="content_image">
                         <img src="https://containermedia.com.br/assets/images/<? echo $row['image_post']; ?>" alt="<? echo $row['title_post'] ?>" />
@@ -67,3 +75,36 @@ if ($result->num_rows > 0) {
     echo "0 result";
 }
 ?>
+<script type="text/javascript">
+    var languages = null;
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'pt',
+            includedLanguages: 'en,es,pt',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+
+        languages = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+    }
+
+    function changeEvent(element) {
+        if (element.fireEvent) {
+            element.fireEvent('onchange');
+        } else {
+            var evObj = document.createEvent("HTMLEvents");
+
+            evObj.initEvent("change", false, true);
+            element.dispatchEvent(evObj);
+        }
+    }
+
+    function changeLanguage(lang) {
+        if (languages) {
+            languages.value = lang;
+            changeEvent(languages);
+        }
+    }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

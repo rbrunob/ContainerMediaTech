@@ -21,7 +21,6 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
 </head>
 
 <body>
-    <div id="google_translate_element" class="boxTradutor"></div>
 
     <?php
     include("./src/Components/Header/Header.php")
@@ -52,40 +51,6 @@ $urlSite = "https://preprod.containermedia.com.br/containermediatech/";
     <!-- ROUND SVG -->
 
     <script src="./src/assets/js/default.js"></script>
-
-    <script type="text/javascript">
-        var languages = null;
-
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'pt',
-                includedLanguages: 'en,es,pt',
-                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-            }, 'google_translate_element');
-
-            languages = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
-        }
-
-        function changeEvent(element) {
-            if (element.fireEvent) {
-                element.fireEvent('onchange');
-            } else {
-                var evObj = document.createEvent("HTMLEvents");
-
-                evObj.initEvent("change", false, true);
-                element.dispatchEvent(evObj);
-            }
-        }
-
-        function changeLanguage(lang) {
-            if (languages) {
-                languages.value = lang;
-                changeEvent(languages);
-            }
-        }
-    </script>
-
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

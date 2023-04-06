@@ -155,6 +155,9 @@
     width: 100%;
     height: auto;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .postnew_content .backto .backto_button {

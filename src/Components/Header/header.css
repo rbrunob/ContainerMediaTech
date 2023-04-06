@@ -63,7 +63,7 @@ header .header_row {
     text-decoration: none;
 }
 
-.header_nav .nav_item a:last-child {
+.header_nav .nav_item a.btn_plataform{
     background-image: linear-gradient(to right, #D82242, #4C121C);
     width: 150px;
     height: 40px;
@@ -75,7 +75,7 @@ header .header_row {
     color: var(--white);
 }
 
-.header_nav .nav_item a:last-child:hover {
+.header_nav .nav_item a.btn_plataform:hover {
     filter: saturate(0.7);
 }
 
