@@ -172,6 +172,36 @@
 /* SECTION 01 */
 
 @media screen and (max-width: 540px) {
+    .brandcustomization_title .title {
+        font-size: var(--lg);
+    }
+
+    .brandcustomization_title .title span {
+        font-size: var(--lg);
+    }
+
+    .brandcustomization_row {
+        width: var(--margin-sm);
+    }
+
+    .brandcustomization_row .description_container .description_title {
+        font-size: var(--xmd);
+    }
+
+    .brandcustomization_row .description_container .description_info {
+        font-size: var(--sm);
+    }
+
+    .brandcustomization_row .description_container {
+        width: 100%;
+    }
+
+    .description_itens {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 540px) {
     .brandcustomization_container {
         flex-direction: column;
     }

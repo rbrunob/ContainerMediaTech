@@ -156,3 +156,25 @@
 .blog_row .btn_blog:hover {
     filter: brightness(0.8);
 }
+
+@media screen and (max-width: 1800px) {
+    .blog_row {
+        width: var(--margin-sm);
+    }
+
+    .blog_news_container {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blog_news_container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .blog_row .title_section {
+        font-size: var(--xmd);
+    }
+}

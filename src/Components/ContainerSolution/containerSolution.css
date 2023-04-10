@@ -81,6 +81,37 @@
 
 /* SECTION 02 */
 
+@media screen and (max-width: 1000px) {
+    .containersolution_row {
+        flex-direction: column;
+    }
+
+    .containersolution_image {
+        width: 100%;
+    }
+
+    .containersolution_content_container {
+        width: 100%;
+    }
+
+    .containersolution_content {
+        width: 100%;
+    }
+
+    .containersolution_content .title {
+        font-size: var(--xmd);
+        line-height: 28px;
+    }
+
+    .containersolution_content .description {
+        font-size: var(--sm);
+    }
+
+    .containersolution_content .containersolution_btn {
+        font-size: var(--xsm);
+    }
+}
+
 @media screen and (max-width: 540px) {
     .containersolution_row {
         flex-direction: column;

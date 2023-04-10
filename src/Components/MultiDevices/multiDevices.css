@@ -99,6 +99,30 @@
 
 /* SECTION 07 */
 
+@media screen and (max-width: 1000px) {
+    .multidevices_row {
+        flex-direction: column;
+    }
+
+    .multidevices_content {
+        width: 100%;
+    }
+
+    .multidevices_content .content_container {
+        width: 100%;
+    }
+
+    .multidevices_image {
+        width: 100%;
+    }
+
+    .multidevices_image .container_image img {
+        width: 460px;
+        top: -30px;
+    }
+
+}
+
 @media screen and (max-width: 540px) {
     .multidevices_row {
         flex-direction: column;

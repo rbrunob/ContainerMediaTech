@@ -55,6 +55,22 @@
 
 /* SECTION 09 */
 
+@media screen and (max-width: 1000px) {
+    .neo_content {
+        width: 100%;
+    }
+
+    .neo_content .description_container .description {
+        font-size: var(--xmd);
+    }
+
+    .neo_logo .logo img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .neo_row {
         flex-direction: column;

@@ -67,6 +67,13 @@
 
 /* SECTION 04 */
 
+@media screen and (max-width: 1440px) {
+    .partners_container .partners_itens .partners_item {
+        width: 150px;
+        height: 90px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .contentpartners_row .title {
         font-size: var(--xmd);

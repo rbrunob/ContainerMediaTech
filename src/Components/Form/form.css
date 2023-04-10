@@ -270,6 +270,20 @@
     border: 2px solid var(--black);
 }
 
+@media screen and (max-width: 1000px) {
+    .form_row {
+        flex-direction: column;
+    }
+
+    .form_step_container {
+        width: 100%;
+    }
+
+    .form_submit_container {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .form_row {
         flex-direction: column;

@@ -105,6 +105,46 @@
 
 /* SECTION 08 */
 
+@media screen and (max-width: 1000px) {
+    .techpartners_row {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .techPartners_logos .logos_container .logo_item {
+        width: 150px;
+        height: 70px;
+    }
+
+    .techPartners_logos {
+        width: 100%;
+    }
+
+    .techpartners_content {
+        width: 100%;
+    }
+
+    .techpartners_content_container .title {
+        width: 100%;
+        font-size: var(--xmd);
+        text-align: center;
+    }
+
+    .techpartners_content_container .description {
+        font-size: var(--sm);
+        text-align: center;
+    }
+
+    .techpartners_content_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .techPartners_logos .logos_container {
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .techpartners_row {
         flex-direction: column-reverse;
