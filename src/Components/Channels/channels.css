@@ -28,7 +28,7 @@
 .channels_row .container_channels {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     height: auto;

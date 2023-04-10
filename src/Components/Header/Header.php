@@ -1,6 +1,25 @@
 <?php
 $menu = "SELECT * FROM itens_menu WHERE menu_id = $menuPage";
 $resultMenu = $conn->query($menu);
+
+if ($resultMenu->num_rows > 0) {
+
+    $pageMenu = array();
+    $i = 0;
+
+    while ($rowMenu = $resultMenu->fetch_assoc()) {
+        $items = array(
+            'link' => $rowMenu['link_item_menu'],
+            'name' => $rowMenu['name_item_menu']
+        );
+
+        $pageMenu[$i] = $items;
+        $i++;
+    }
+} else {
+    echo "Nenhum item de menu encontrado.";
+}
+
 ?>
 <header>
     <div class="header_row">
@@ -13,12 +32,10 @@ $resultMenu = $conn->query($menu);
         <nav class="header_nav">
             <div class="nav_item">
                 <?
-                    if ($resultMenu->num_rows > 0) {
-                        while ($rowMenu = $resultMenu->fetch_assoc()) {
-                        ?><a href="<? echo $urlSite; echo $rowMenu['link_item_menu']?>"><?echo $rowMenu['name_item_menu']?></a><?
-                        }
-                    } else {
-                        echo "Nenhum item de menu encontrado.";
+                    for ($i = 0; $i < count($pageMenu); $i++) {
+                       
+                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
+                       
                     }
                 ?>
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
@@ -31,12 +48,10 @@ $resultMenu = $conn->query($menu);
                 </div>
                 <div class="nav_content">
                     <?
-                        if ($resultMenu->num_rows > 0) {
-                            while ($rowMenu = $resultMenu->fetch_assoc()) {
-                            ?><a href="<? echo $urlSite; echo $rowMenu['link_item_menu']?>"><?echo $rowMenu['name_item_menu']?></a><?
-                            }
-                        } else {
-                            echo "Nenhum item de menu encontrado.";
+                      for ($i = 0; $i < count($pageMenu); $i++) {
+                       
+                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
+                       
                         }
                     ?>
                     <a href="https://containermediaplay.com.br/" target="_blank">conheça a plataforma</a>

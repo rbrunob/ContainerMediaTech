@@ -63,7 +63,7 @@ header .header_row {
     text-decoration: none;
 }
 
-.header_nav .nav_item a.btn_plataform{
+.header_nav .nav_item a.btn_plataform {
     background-image: linear-gradient(to right, #D82242, #4C121C);
     width: 150px;
     height: 40px;
@@ -83,7 +83,7 @@ header .header_row {
     display: none;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1000px) {
     .header_nav .nav_item {
         display: none;
     }
@@ -100,7 +100,7 @@ header .header_row {
     }
 
     .header_nav .nav_mobile .nav_content {
-        right: -270px;
+        right: -300px;
         transition: all .3s;
         display: flex;
         flex-direction: column;
@@ -139,6 +139,7 @@ header .header_row {
     .header_nav .nav_mobile .nav_content a {
         width: 100%;
         padding: 10px;
+        font-size: var(--sm);
         text-transform: capitalize;
         display: flex;
         flex-direction: column;
@@ -169,5 +170,11 @@ header .header_row {
     .nav_menu.active .menu_line:nth-child(3) {
         transition-delay: .2s;
         transform: rotate(135deg) translate(-7px, 7px);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header_nav .nav_mobile .nav_content a {
+        font-size: var(--sm);
     }
 }
