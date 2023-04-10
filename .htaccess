@@ -11,6 +11,8 @@ RewriteRule ^ %1 [R,NC]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php
 
+
+## menu pt_br
 RewriteRule ^home$ ./index.php?page=1&language=1
 
 RewriteRule ^$ ./index.php?page=1&language=1
@@ -27,4 +29,25 @@ RewriteRule ^catalogo$ ./index.php?page=6&language=1
 
 RewriteRule ^blog$ ./index.php?page=7&language=1
 
-RewriteRule ^blog/([a-z0-9]+)?$ ./index.php?page=8&title=$1&language=1 [NC,QSA] 
+RewriteRule ^blog/([a-z0-9]+)?$ ./index.php?page=8&title=$1&language=1 [NC,QSA]
+## FIM
+
+## menu en
+RewriteRule ^home-en$ ./index.php?page=9&language=2
+
+RewriteRule ^en$ ./index.php?page=9&language=2
+
+RewriteRule ^who-we-are-en$ ./index.php?page=10&language=2
+
+RewriteRule ^cdn-en$ ./index.php?page=11&language=2
+
+RewriteRule ^cases-en$ ./index.php?page=12&language=2
+
+RewriteRule ^personalization-en$ ./index.php?page=13&language=2
+
+RewriteRule ^catalog-en$ ./index.php?page=14&language=2
+
+RewriteRule ^blog-en$ ./index.php?page=15&language=2
+
+RewriteRule ^blog-en/([a-z0-9]+)?$ ./index.php?page=16&title=$1&language=2 [NC,QSA]
+## FIM
