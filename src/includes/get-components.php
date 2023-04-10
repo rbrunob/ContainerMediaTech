@@ -16,6 +16,7 @@ if ($result->num_rows > 0) {
         array_push($sections, "./src/Components/" . $row['path_section']);
         $classPage = '/src/assets/styles/pages/' . $row['style_page'];
         $namePage = $row['name_page'];
+        $menuPage = $row['menu_id'];
     }
 } else {
     echo "0 results";

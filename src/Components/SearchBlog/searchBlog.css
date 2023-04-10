@@ -147,6 +147,7 @@
         min-width: auto;
         height: 100%;
         position: unset;
+        margin: 0 auto;
     }
 
     #searchBlog .searchblog_row {

@@ -1,3 +1,7 @@
+<?php
+$menu = "SELECT * FROM itens_menu WHERE menu_id = $menuPage";
+$resultMenu = $conn->query($menu);
+?>
 <header>
     <div class="header_row">
         <div class="header_logo">
@@ -8,13 +12,15 @@
 
         <nav class="header_nav">
             <div class="nav_item">
-                <a href="https://preprod.containermedia.com.br/containermediatech/home">home</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/quem-somos">Quem Somos</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/cdn">cdn</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/cases">Cases</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/personalizacao">personalização</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/catalogo">Catálogo</a>
-                <a href="https://preprod.containermedia.com.br/containermediatech/blog">blog</a>
+                <?
+                    if ($resultMenu->num_rows > 0) {
+                        while ($rowMenu = $resultMenu->fetch_assoc()) {
+                        ?><a href="<? echo $urlSite; echo $rowMenu['link_item_menu']?>"><?echo $rowMenu['name_item_menu']?></a><?
+                        }
+                    } else {
+                        echo "Nenhum item de menu encontrado.";
+                    }
+                ?>
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
             </div>
             <div class="nav_mobile">
@@ -24,13 +30,15 @@
                     <div class="menu_line"></div>
                 </div>
                 <div class="nav_content">
-                    <a href="https://preprod.containermedia.com.br/containermediatech/home">home</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/quem-somos">Quem Somos</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/cdn">cdn</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/cases">Cases</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/personalizacao">personalização</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/catalogo">Catálogo</a>
-                    <a href="https://preprod.containermedia.com.br/containermediatech/blog">blog</a>
+                    <?
+                        if ($resultMenu->num_rows > 0) {
+                            while ($rowMenu = $resultMenu->fetch_assoc()) {
+                            ?><a href="<? echo $urlSite; echo $rowMenu['link_item_menu']?>"><?echo $rowMenu['name_item_menu']?></a><?
+                            }
+                        } else {
+                            echo "Nenhum item de menu encontrado.";
+                        }
+                    ?>
                     <a href="https://containermediaplay.com.br/" target="_blank">conheça a plataforma</a>
                 </div>
             </div>

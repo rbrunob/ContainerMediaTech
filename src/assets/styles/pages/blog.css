@@ -40,7 +40,7 @@ strong#docs-internal-guid-49d6d183-7fff-a1cd-39d1-dffd859e8b17 {
     }
 
     .blog_news_container {
-        justify-content: space-between;
+        justify-content: center;
         gap: 80px;
     }
 }
