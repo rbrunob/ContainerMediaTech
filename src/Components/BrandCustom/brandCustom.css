@@ -171,7 +171,7 @@
 
 /* SECTION 01 */
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1000px) {
     .brandcustomization_title .title {
         font-size: var(--lg);
     }
