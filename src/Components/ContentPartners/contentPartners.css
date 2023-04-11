@@ -1,5 +1,3 @@
-/* SECTION 04 */
-
 #contentPartners {
     width: 100%;
     height: auto;
@@ -8,9 +6,18 @@
 .contentpartners_row {
     width: var(--margin-sm);
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 50px;
     padding: var(--padding-default);
@@ -25,30 +32,55 @@
 }
 
 .partners_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     gap: 20px;
 }
 
 .partners_container .partners_itens {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     gap: 20px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .partners_container .partners_itens .partners_item {
     width: 230px;
     height: 130px;
+    -webkit-box-shadow: 0 0 10px #0000004f;
     box-shadow: 0 0 10px #0000004f;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     cursor: default;
     border-radius: 8px;
@@ -56,6 +88,8 @@
 }
 
 .partners_container .partners_itens .partners_item:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -64,8 +98,6 @@
     height: auto;
     text-align: center;
 }
-
-/* SECTION 04 */
 
 @media screen and (max-width: 1440px) {
     .partners_container .partners_itens .partners_item {

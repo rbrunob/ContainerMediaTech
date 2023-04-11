@@ -1,5 +1,3 @@
-/* CDN ADVANCED */
-
 #advanced {
     width: 100%;
     height: auto;
@@ -9,14 +7,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0px -20px 20px 0px #0000005e;
+    -webkit-box-shadow: inset 0px -20px 20px 0px #0000005e;
+            box-shadow: inset 0px -20px 20px 0px #0000005e;
 }
 
 #advanced .advanced_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: var(--margin-md);
     margin: 0 auto;
     padding: var(--padding-default) 5%;
@@ -54,9 +62,15 @@
 .advanced_infographic_container {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -68,9 +82,15 @@
     min-width: 547px;
     min-height: 547px;
     height: 547px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* BORDAS */
@@ -82,10 +102,19 @@
     position: absolute;
     left: 0;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+            filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     z-index: 1;
 }
@@ -93,9 +122,12 @@
 .infographic_container_circle .advanced_itens::before {
     content: "";
     position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#F2F2F2), to(#E5E5E5));
+    background-image: -o-linear-gradient(left, #F2F2F2, #E5E5E5);
     background-image: linear-gradient(to right, #F2F2F2, #E5E5E5);
     width: 100%;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     height: 100%;
 }
 
@@ -106,10 +138,17 @@
     position: relative;
     width: 215px;
     height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: url(#round);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-filter: url(#round);
+            filter: url(#round);
 }
 
 .advanced_itens .advanced_item_container::before {
@@ -117,7 +156,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 /* BORDA DOIS */
@@ -127,11 +167,21 @@
     position: relative;
     width: 190px;
     height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-filter: url(#round) drop-shadow(0px 0px 5px #00000080);
+            filter: url(#round) drop-shadow(0px 0px 5px #00000080);
 }
 
 .advanced_itens .advanced_item_container .advanced_item_border::before {
@@ -139,7 +189,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-image: -webkit-gradient(linear, right top, left top, from(#D9D9D9), to(#f8f8ff));
+    background-image: -o-linear-gradient(right, #D9D9D9, #f8f8ff);
     background-image: linear-gradient(to left, #D9D9D9, #f8f8ff);
 }
 
@@ -147,20 +200,30 @@
 /* BORDA QUATRO */
 
 .advanced_itens .advanced_item_container .advanced_item_border .advanced_item_box_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     width: 183px;
     height: 153px;
-    filter: url(#round);
+    -webkit-filter: url(#round);
+            filter: url(#round);
 }
 
 .advanced_itens .advanced_item_container .advanced_item_border .advanced_item_box_icons::before {
     content: "";
     position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#DADADA), to(#FEFEFE));
+    background-image: -o-linear-gradient(left, #DADADA, #FEFEFE);
     background-image: linear-gradient(to right, #DADADA, #FEFEFE);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 95% 65%, 5% 65%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 95% 65%, 5% 65%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 95% 65%, 5% 65%, 0% 50%);
     width: 100%;
     height: 100%;
 }
@@ -173,11 +236,18 @@
 .advanced_item_middle {
     width: 240px;
     height: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
-    filter: url(#round) drop-shadow(0px 0px 10px black);
+    -webkit-filter: url(#round) drop-shadow(0px 0px 10px black);
+            filter: url(#round) drop-shadow(0px 0px 10px black);
     z-index: 1;
 }
 
@@ -187,17 +257,25 @@
     background-color: #7F7F7F;
     width: 100%;
     height: 100%;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .advanced_item_middle .border_item_middle {
     width: 220px;
     height: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
-    filter: url(#round);
+    -webkit-filter: url(#round);
+            filter: url(#round);
 }
 
 .advanced_item_middle .border_item_middle::before {
@@ -206,15 +284,22 @@
     width: 100%;
     height: 100%;
     background-color: #f8f8ff;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .advanced_item_middle .border_item_middle .item_middle {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     top: -5px;
 }
@@ -233,9 +318,15 @@
     width: 100%;
     height: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .advanced_item_box_icons .advanced_item_box_description p {
@@ -246,10 +337,19 @@
     color: #757373;
     line-height: 25px;
     top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: default;
 }
 
@@ -355,53 +455,75 @@
 /* GRADIENT */
 
 .advanced_itens:nth-child(1) .advanced_item_container::before {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     background-color: #D42142;
 }
 
 
 .advanced_itens:nth-child(2)::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(#DEDEDE), to(#CBCBCB));
+    background-image: -o-linear-gradient(left, #DEDEDE, #CBCBCB);
     background-image: linear-gradient(to right, #DEDEDE, #CBCBCB);
 }
 
 .advanced_itens:nth-child(2) .advanced_item_container::before {
     background-color: #B31842;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .advanced_itens:nth-child(3)::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(#CECECE), to(#C1C1C1));
+    background-image: -o-linear-gradient(left, #CECECE, #C1C1C1);
     background-image: linear-gradient(to right, #CECECE, #C1C1C1);
 }
 
 .advanced_itens:nth-child(3) .advanced_item_container::before {
     background-color: #850D42;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .advanced_itens:nth-child(4)::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(#C5C5C5), to(#BFBFBF));
+    background-image: -o-linear-gradient(left, #C5C5C5, #BFBFBF);
     background-image: linear-gradient(to right, #C5C5C5, #BFBFBF);
 }
 
 .advanced_itens:nth-child(4) .advanced_item_container::before {
     background-color: #720A41;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .advanced_itens:nth-child(5)::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(#E1E1E1), to(#D4D4D4));
+    background-image: -o-linear-gradient(left, #E1E1E1, #D4D4D4);
     background-image: linear-gradient(to right, #E1E1E1, #D4D4D4);
 }
 
 .advanced_itens:nth-child(5) .advanced_item_container::before {
     background-color: #941240;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .advanced_itens:nth-child(6)::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(#F3F3F3), to(#E7E7E7));
+    background-image: -o-linear-gradient(left, #F3F3F3, #E7E7E7);
     background-image: linear-gradient(to right, #F3F3F3, #E7E7E7);
 }
 
 .advanced_itens:nth-child(6) .advanced_item_container::before {
     background-color: #C81E42;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
@@ -411,6 +533,8 @@
 
 .infographic_container_circle .description_item_advanced {
     position: absolute;
+    background-image: -webkit-gradient(linear, right top, left top, from(#c0c0c0), to(transparent));
+    background-image: -o-linear-gradient(right, #c0c0c0, transparent);
     background-image: linear-gradient(to left, #c0c0c0, transparent);
     padding: 10px 60px 10px 0;
     width: 490px;
@@ -440,6 +564,8 @@
 .description_item_advanced.dados {
     bottom: 150px;
     right: -440px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#c0c0c0), to(transparent));
+    background-image: -o-linear-gradient(left, #c0c0c0, transparent);
     background-image: linear-gradient(to right, #c0c0c0, transparent);
     padding: 10px 0 10px 60px;
 }
@@ -451,6 +577,8 @@
 .description_item_advanced.plataforma {
     bottom: 325px;
     right: -440px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#c0c0c0), to(transparent));
+    background-image: -o-linear-gradient(left, #c0c0c0, transparent);
     background-image: linear-gradient(to right, #c0c0c0, transparent);
     padding: 10px 0 10px 60px;
 }
@@ -462,6 +590,8 @@
 .description_item_advanced.abr {
     top: 0px;
     right: -260px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#c0c0c0), to(transparent));
+    background-image: -o-linear-gradient(left, #c0c0c0, transparent);
     background-image: linear-gradient(to right, #c0c0c0, transparent);
     padding: 10px 0 10px 60px;
 }
@@ -471,8 +601,6 @@
 }
 
 /* DESCIRÇÕES */
-
-/* CDN ADVANCED */
 
 @media screen and (max-width: 540px) {
 

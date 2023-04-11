@@ -1,5 +1,3 @@
-/* SECTION 06 */
-
 #channels {
     width: 100%;
     height: auto;
@@ -9,9 +7,18 @@
 .channels_row {
     width: var(--margin-md);
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
     padding: var(--padding-default);
@@ -26,9 +33,16 @@
 }
 
 .channels_row .container_channels {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
@@ -38,8 +52,14 @@
 .channels_row .container_channels .channel_item {
     width: 130px;
     height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: transparent;
 }
@@ -49,8 +69,6 @@
     height: auto;
     text-align: center;
 }
-
-/* SECTION 06 */
 
 @media screen and (max-width: 540px) {
     .channels_row .title {
@@ -63,6 +81,8 @@
     }
 
     .channels_row .container_channels {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 }

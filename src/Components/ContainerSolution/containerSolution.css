@@ -1,5 +1,3 @@
-/* SECTION 02 */
-
 #containerSolution {
     width: 100%;
     height: auto;
@@ -8,8 +6,14 @@
 .containersolution_row {
     width: var(--margin-md);
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     padding: var(--padding-default);
 }
@@ -17,8 +21,14 @@
 .containersolution_image {
     width: 50%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -35,9 +45,18 @@
 
 .containersolution_content {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: auto;
     gap: 20px;
@@ -67,22 +86,27 @@
     padding: 10px 0;
     background-image: var(--gradient-red);
     text-align: center;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     font-size: var(--sm);
     border-radius: 30px;
     max-width: 250px;
     font-weight: 400;
+    -webkit-filter: brightness(1);
     filter: brightness(1);
 }
 
 .containersolution_content .containersolution_btn:hover {
+    -webkit-filter: brightness(0.8);
     filter: brightness(0.8);
 }
 
-/* SECTION 02 */
-
 @media screen and (max-width: 1000px) {
     .containersolution_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -114,6 +138,9 @@
 
 @media screen and (max-width: 540px) {
     .containersolution_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 

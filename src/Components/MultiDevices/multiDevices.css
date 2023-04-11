@@ -1,5 +1,3 @@
-/* SECTION 07 */
-
 #multiDevices {
     width: 100%;
     height: auto;
@@ -14,8 +12,14 @@
     width: var(--margin-md);
     height: auto;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: var(--padding-default);
 }
@@ -32,9 +36,18 @@
 
 .multidevices_content .content_container {
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
 }
@@ -63,8 +76,14 @@
 
 .multidevices_content .content_container .container_apps {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     gap: 20px;
 }
@@ -72,8 +91,14 @@
 .multidevices_content .content_container .container_apps a {
     width: 200px;
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     max-width: 200px;
 }
@@ -97,10 +122,11 @@
     position: relative;
 }
 
-/* SECTION 07 */
-
 @media screen and (max-width: 1000px) {
     .multidevices_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -125,6 +151,9 @@
 
 @media screen and (max-width: 540px) {
     .multidevices_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -143,10 +172,21 @@
     .multidevices_image .container_image {
         width: 300px;
         height: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .multidevices_image .container_image img {
-        width: 480px;
-        top: 0px;
+        width: 100%;
+        height: auto;
+        left: unset;
+        top: unset;
     }
 }

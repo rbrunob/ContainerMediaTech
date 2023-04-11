@@ -1,5 +1,3 @@
-/* CDN MULTI-TENDANCE */
-
 #cdnmulti {
     width: 100%;
     height: auto;
@@ -11,9 +9,18 @@
 }
 
 #cdnmulti .cdnmulti_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: var(--margin-md);
     margin: 0 auto;
@@ -35,17 +42,32 @@
 }
 
 .cdnmulti_row .advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 50%;
     position: relative;
 }
 
 .advantage .advantage_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
     width: 100%;
@@ -57,8 +79,14 @@
 .advantage .advantage_item .advantage_icon_container {
     width: 100%;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
 }
@@ -84,8 +112,14 @@
 .advantage_icon_container .advantage_icon {
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: 2px solid var(--white);
     border-radius: 50%;
@@ -96,8 +130,14 @@
 .advantage_icon_container .advantage_icon span {
     width: 50px;
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--red);
     border-radius: 50%;
@@ -111,8 +151,14 @@
 .advantage_item .advantage_description_container {
     width: 225px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 145px;
     border: 2px solid var(--white);
@@ -125,8 +171,14 @@
     height: 127px;
     background-color: var(--dark-gray);
     border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -142,8 +194,14 @@
     width: 235px;
     height: 50px;
     border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     font-size: var(--md);
@@ -151,6 +209,8 @@
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
 }
 
@@ -158,8 +218,6 @@
     color: var(--red);
     background-color: var(--white);
 }
-
-/* CDN MULTI-TENDANCE */
 
 @media screen and (max-width: 540px) {
     #cdnmulti {
@@ -173,9 +231,18 @@
     }
 
     #cdnmulti .cdnmulti_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         width: var(--margin-md);
         margin: 0 auto;
@@ -198,18 +265,36 @@
     }
 
     .cdnmulti_row .advantage {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         position: relative;
     }
 
     .advantage .advantage_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 20px;
         width: 100%;
@@ -221,8 +306,14 @@
     .advantage .advantage_item .advantage_icon_container {
         width: 100%;
         overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: relative;
     }
@@ -249,8 +340,14 @@
     .advantage_icon_container .advantage_icon {
         width: 60px;
         height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         border: 2px solid var(--white);
         border-radius: 50%;
@@ -261,8 +358,14 @@
     .advantage_icon_container .advantage_icon span {
         width: 50px;
         height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         background-color: var(--red);
         border-radius: 50%;
@@ -276,8 +379,14 @@
     .advantage_item .advantage_description_container {
         width: 225px;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         height: 145px;
         border: 2px solid var(--white);
@@ -290,8 +399,14 @@
         height: 127px;
         background-color: var(--dark-gray);
         border-radius: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -307,8 +422,14 @@
         width: 235px;
         height: 50px;
         border-radius: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         text-align: center;
         font-size: var(--md);
@@ -316,6 +437,8 @@
         color: var(--white);
         text-decoration: none;
         text-transform: uppercase;
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
         transition: var(--transition);
     }
 

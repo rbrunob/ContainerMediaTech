@@ -1,5 +1,3 @@
-/* SECTION 05 */
-
 #liveChannelsCarousel {
     width: 100%;
     height: auto;
@@ -8,18 +6,36 @@
 .livechannelscarousel_row {
     width: var(--margin-sm);
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: var(--padding-default);
     gap: 30px;
 }
 
 .descriptionlivechannels_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 15px;
     width: 60%;
@@ -40,16 +56,31 @@
 }
 
 .livechannel_carouselcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
 }
 
 .livechannel_carouselcontainer .carouselcontainer_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
 }
@@ -58,11 +89,19 @@
     width: 100%;
     max-width: 350px;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: var(--white);
     padding: 15px 0;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     cursor: pointer;
     border: none;
@@ -77,6 +116,8 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     font-weight: 400;
 }
@@ -102,16 +143,23 @@
 }
 
 .livechannel_carouselcontainer .carouselcontainer_carousel .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
     position: relative;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .livechannel_carouselcontainer .carouselcontainer_carousel .container .image_container {
     width: 100%;
     height: auto;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
@@ -119,8 +167,6 @@
     width: 100%;
     height: auto;
 }
-
-/* SECTION 05 */
 
 @media screen and (max-width: 980px) {
     .descriptionlivechannels_container {

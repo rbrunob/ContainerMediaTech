@@ -36,16 +36,14 @@ if (liveCarousel) {
         carouselArea.style.width = `${widthArea - 100}px`;
     }
 
-
-    const itemWidth = carouselItems[0].offsetWidth; // PEGA O TAMANHO DO ITEM BASEADO NO PRIMEIRO ITEM DO ARRAY
+    const itemWidth = carouselItems[0].offsetWidth;
 
     function moveCarousel(index) {
-        // REALIZA A ANIMAÇÃO DE TRANSFORM BASEADO NO TAMANHO DO ITEM VEZES DATA-INDEX DELE (EXEMPLO: ITEM * 0) ELE NAO MOVE, (ITEM * 1) ELE MOVE O TAMANHO DELE 1X
-        carouselContainer.style.transform = `translate(-${itemWidth * index}px)`;
+        carouselContainer.style.webkitTransform = `translate3d(-${itemWidth * index}px, 0, 0)`;
     };
 
     carouselButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('touchstart', () => {
             const index = btn.getAttribute('data-index');
             const select = document.getElementsByClassName('carouselcontainer_navigation')[0].getElementsByClassName('active')[0];
 
@@ -57,6 +55,7 @@ if (liveCarousel) {
             moveCarousel(index);
         })
     })
+
 }
 
 // CAROUSEL W/ ARROWS

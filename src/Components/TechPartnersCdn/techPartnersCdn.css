@@ -1,5 +1,3 @@
-/* PARECEIROS DE TECNOLOGIA */
-
 #techpartners {
     width: 100%;
     height: auto;
@@ -7,8 +5,14 @@
 }
 
 #techpartners .techpartners_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     width: var(--margin-sm);
     margin: 4% auto 0;
@@ -51,17 +55,22 @@
 }
 
 .techpartners_contents .container_techpartners {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 80%;
     height: auto;
     margin: 40px auto 0;
     gap: 20px;
 }
-
-/* PARECEIROS DE TECNOLOGIA */
 
 @media screen and (max-width: 540px) {
 
@@ -72,11 +81,20 @@
     }
 
     #techpartners .techpartners_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         width: var(--margin-sm);
         margin: 10% auto 15%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -100,9 +118,18 @@
         text-align: center;
         position: relative;
         padding: 0 0 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -120,9 +147,16 @@
     }
 
     .techpartners_contents .container_techpartners {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 100%;
         height: auto;
@@ -133,8 +167,14 @@
     .techpartners_contents .container_techpartners .techpartner_itens {
         width: 100px;
         height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 

@@ -5,9 +5,15 @@
 }
 
 #allBlog .allblog_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
-    justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: var(--margin-md);
     margin: 0 auto;
     gap: 50px;
@@ -17,6 +23,9 @@
 @media screen and (max-width: 540px) {
     #allBlog .allblog_row {
         width: var(--margin-sm);
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
 }
