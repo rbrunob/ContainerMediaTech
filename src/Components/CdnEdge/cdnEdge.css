@@ -118,6 +118,134 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1480px) {
+    #cdnedge {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #cdnedge .cdnedge_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        width: var(--margin-md);
+        margin: 0 auto;
+        gap: 50px;
+        padding: var(--padding-default);
+    }
+
+    .cdnedge_row .cdnedge_content {
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cdnedge_row .cdnedge_content h3 {
+        font-size: 29px;
+        font-weight: bold;
+        color: var(--red);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .cdnedge_row .cdnedge_content p {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--gray);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .cdnedge_content .cdnedge_description {
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        background-image: -webkit-gradient(linear, left top, right top, from(#e3e3e3), to(transparent));
+        background-image: -o-linear-gradient(left, #e3e3e3, transparent);
+        background-image: linear-gradient(to right, #e3e3e3, transparent);
+        padding: 20px;
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cdnedge_description .description_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .cdnedge_description .description_item .icon {
+        width: 70px;
+        height: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .cdnedge_description .description_item .icon img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .cdnedge_description .description_item p {
+        text-align: left;
+        font-size: var(--xsm);
+        font-weight: 500;
+    }
+
+    .cdnedge_map img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #cdnedge {

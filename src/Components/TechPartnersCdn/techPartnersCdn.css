@@ -72,6 +72,86 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 1480px) {
+    #techpartners {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #techpartners .techpartners_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        width: var(--margin-sm);
+        margin: 4% auto 0;
+    }
+
+    .techpartners_row .techpartners_contents {
+        width: 50%;
+        height: auto;
+    }
+
+    .techpartners_row .techpartners_contents img {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .techpartners_row .techpartners_contents h6 {
+        font-size: 46px;
+        color: var(--red);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .techpartners_row .techpartners_contents h6::after {
+        content: '';
+        width: 400px;
+        bottom: 0;
+        position: absolute;
+        height: 1px;
+        background-color: var(--dark-gray);
+        left: unset;
+    }
+
+    .techpartners_row .techpartners_contents h6 span {
+        color: var(--dark-gray);
+    }
+
+    .techpartners_contents .container_techpartners {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        margin: 40px auto 0;
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #techpartners {

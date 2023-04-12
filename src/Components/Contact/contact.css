@@ -140,6 +140,25 @@
     color: var(--white);
 }
 
+@media screen and (max-width: 1480px) {
+    .contact_contents .contact_action p {
+        font-size: 40px;
+    }
+
+    .contact_contents .contact_description p {
+        font-size: var(--xmd);
+    }
+
+    .contact_contents .contact_action a {
+        font-size: 35px;
+        width: 400px;
+    }
+
+    .contact_contents .contact_action p:last-child {
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #contact {

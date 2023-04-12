@@ -337,6 +337,38 @@ svg path {
     line-height: 25px;
 }
 
+@media screen and (max-width: 1480px) {
+    .dynamic_advertising_subtitle p {
+        font-size: 20px;
+    }
+
+    .container_dynamic {
+        transform: scale(.8);
+    }
+
+    .dynamic_advertising_footer span {
+        font-size: var(--sm);
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .container_dynamic {
+        transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container_dynamic {
+        transform: scale(.65);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container_dynamic {
+        transform: scale(.55);
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #dynamic_advertising .dynamic_advertising_row {

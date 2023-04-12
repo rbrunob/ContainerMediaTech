@@ -223,6 +223,12 @@
     text-align: center;
 }
 
+@media screen and (max-width: 1660px) {
+    #containerads .containerads_row .containerads_advantage {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #containerads {

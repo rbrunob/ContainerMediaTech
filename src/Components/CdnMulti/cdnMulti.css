@@ -229,6 +229,12 @@
     }
 }
 
+@media screen and (max-width: 1360px) {
+    .cdnmulti_row .advantage {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #cdnmulti {
         width: 100%;
