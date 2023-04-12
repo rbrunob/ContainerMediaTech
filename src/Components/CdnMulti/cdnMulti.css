@@ -219,6 +219,16 @@
     background-color: var(--white);
 }
 
+@media screen and (max-width: 1660px) {
+    .cdnmulti_row .advantage {
+        width: 90%;
+    }
+
+    .container_dynamic {
+        gap: 70px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #cdnmulti {
         width: 100%;

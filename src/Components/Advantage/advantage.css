@@ -785,6 +785,14 @@
 
 /* item $ */
 
+@media screen and (max-width: 1600px) {
+    .responsibilities_content {
+        -webkit-box-align: flex-end;
+        -ms-flex-align: flex-end;
+        align-items: flex-end;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .suportadvantage_row {
         width: var(--margin-md);

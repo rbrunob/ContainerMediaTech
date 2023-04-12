@@ -54,6 +54,12 @@
     gap: 10px 30px;
 }
 
+@media screen and (max-width: 1600px) {
+    #partners .partner_row {
+        width: var(--margin-md);
+    }
+}
+
 @media screen and (max-width: 540px) {
     #partners {
         width: 100%;

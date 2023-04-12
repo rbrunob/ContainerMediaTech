@@ -20,7 +20,7 @@
     padding: var(--padding-default);
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1348px) {
     #allBlog .allblog_row {
         width: var(--margin-sm);
         -webkit-box-orient: vertical;

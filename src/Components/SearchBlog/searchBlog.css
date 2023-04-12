@@ -191,10 +191,10 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1348px) {
     #searchBlog {
         width: 100%;
-        max-width: 350px;
+        max-width: unset;
         min-width: auto;
         height: 100%;
         position: unset;

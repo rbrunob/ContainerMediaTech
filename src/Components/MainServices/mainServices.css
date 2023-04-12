@@ -140,6 +140,26 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1000px) {
+    .mainservices_row .container_mainservices .item .descriptions_item .title {
+        font-size: var(--sm);
+    }
+
+    .mainservices_row .container_mainservices .item .descriptions_item .description {
+        font-size: var(--xsm);
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .mainservices_row .container_mainservices .item {
+        min-width: 175px;
+    }
+
+    .mainservices_row .container_mainservices {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .mainservices_row .title {
         font-size: var(--xmd);

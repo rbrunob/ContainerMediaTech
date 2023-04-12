@@ -52,6 +52,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .container_highlights .highlights_item {
@@ -69,7 +70,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     -webkit-transition: var(--transition);
     -o-transition: var(--transition);
     transition: var(--transition);
