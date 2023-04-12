@@ -15,11 +15,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: var(--padding-default);
 }
 
@@ -31,14 +31,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .yrplataform_row .mockup_container {
@@ -49,14 +49,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .yrplataform_row .decription_container {
@@ -67,14 +67,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .yrplataform_row .title_container .title {
@@ -95,14 +95,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -121,22 +121,22 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .video_and_img .video_container {
-    width: 185px;
+    width: 184px;
     height: 364px;
     border-radius: 30px;
     position: absolute;
-    overflow-y: clip;
+    overflow: hidden;
     z-index: 0;
     -webkit-transform: rotate3d(0, 1, 1, 35deg);
-            transform: rotate3d(0, 1, 1, 35deg);
+    transform: rotate3d(0, 1, 1, 35deg);
 }
 
 .mockup_container .video_and_img img {
@@ -144,16 +144,17 @@
     position: absolute;
     z-index: 1;
     -webkit-transform: rotate3d(0, 1, 1, 35deg);
-            transform: rotate3d(0, 1, 1, 35deg);
+    transform: rotate3d(0, 1, 1, 35deg);
 }
 
 .video_and_img .video_container video {
-    width: 180px;
+    width: 178px;
 }
 
 @media screen and (max-width: 1000px) {
     .yrplataform_row .title_container .title {
-        font-size: var(--md);
+        font-size: 26px;
+        line-height: 30px;
     }
 
     .mockup_container .video_and_img {
@@ -177,6 +178,18 @@
         width: 90px;
         height: 50px;
     }
+
+    .yrplataform_row .decription_container {
+        width: 50%;
+    }
+
+    .yrplataform_row .mockup_container {
+        display: none;
+    }
+
+    .yrplataform_row .title_container {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -185,11 +198,11 @@
         padding: var(--padding-default);
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .yrplataform_row .title_container .title {

@@ -146,6 +146,21 @@
 
 /* SECTION 08 */
 
+@media screen and (max-width: 1200px) {
+    .techPartners_logos .logos_container .logo_item {
+        width: 120px;
+        height: 50px;
+    }
+
+    .techpartners_content_container .title {
+        font-size: var(--xmd);
+    }
+
+    .techpartners_content_container .description {
+        font-size: var(--sm);
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .techpartners_row {
         -webkit-box-orient: vertical;

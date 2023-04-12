@@ -131,12 +131,77 @@
     filter: brightness(0.8);
 }
 
+@media screen and (max-width: 1200px) {
+    .containerbox_row .containerBox_content .containerBox_texts .description {
+        font-size: var(--sm);
+        line-height: 23px;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts .title {
+        font-size: var(--xmd);
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .containerbox_row {
+        width: var(--margin-lg);
+        flex-direction: column;
+    }
+
+    .containerbox_row .containerbox_image {
+        width: 100%;
+    }
+
+    .containerbox_row .containerBox_content {
+        width: 100%;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts .title {
+        font-size: var(--xmd);
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_texts .description {
+        font-size: var(--sm);
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_btn {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .containerbox_row .containerBox_content .containerBox_btn a {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .containerbox_row {
+        width: var(--margin-md);
+    }
+}
+
 @media screen and (max-width: 540px) {
     .containerbox_row {
         -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .containerbox_row .containerbox_image {

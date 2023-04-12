@@ -101,12 +101,12 @@
 
 @media screen and (max-width: 1440px) {
     .partners_container .partners_itens .partners_item {
-        width: 150px;
-        height: 90px;
+        width: 140px;
+        height: 80px;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1000px) {
     .contentpartners_row .title {
         font-size: var(--xmd);
     }
@@ -114,6 +114,13 @@
     .partners_container .partners_itens .partners_item {
         width: 120px;
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .partners_container .partners_itens .partners_item {
+        width: 80px;
+        height: 50px;
     }
 }
 
