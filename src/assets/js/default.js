@@ -43,7 +43,7 @@ if (liveCarousel) {
     };
 
     carouselButtons.forEach(btn => {
-        btn.addEventListener('touchstart', () => {
+        btn.addEventListener('click', () => {
             const index = btn.getAttribute('data-index');
             const select = document.getElementsByClassName('carouselcontainer_navigation')[0].getElementsByClassName('active')[0];
 
@@ -55,7 +55,6 @@ if (liveCarousel) {
             moveCarousel(index);
         })
     })
-
 }
 
 // CAROUSEL W/ ARROWS

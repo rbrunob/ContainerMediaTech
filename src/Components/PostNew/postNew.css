@@ -264,6 +264,12 @@
     color: var(--red);
 }
 
+@media screen and (max-width: 1200px) {
+    .postnew_row {
+        width: var(--margin-md);
+    }
+}
+
 @media screen and (max-width: 540px) {
     .postnew_row {
         width: var(--margin-md);
@@ -282,5 +288,14 @@
 
     .postnew_content .content_texts .texts {
         font-size: var(--xsm);
+    }
+
+    .postnew_content .backto {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .postnew_content .content_presets {
+        gap: 20px;
     }
 }
