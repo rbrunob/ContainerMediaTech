@@ -152,6 +152,39 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    #techpartners .techpartners_row {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    .techpartners_row .techpartners_contents {
+        width: 100%;
+    }
+
+    .techpartners_row .techpartners_contents img {
+        display: none;
+    }
+
+    .techpartner_itens {
+        width: 150px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .techpartners_row .techpartner_itens img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .techpartners_contents .container_techpartners {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #techpartners {

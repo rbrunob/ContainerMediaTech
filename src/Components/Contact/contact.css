@@ -159,6 +159,28 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    #contact .contact_row {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact_row .contact_contents {
+        width: 100%;
+    }
+
+    .contact_contents .contact_description {
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .contact_contents .contact_description p {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     #contact {

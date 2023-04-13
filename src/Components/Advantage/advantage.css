@@ -813,6 +813,16 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    .suportadvantage_row {
+        flex-direction: column;
+    }
+
+    .suport_container {
+        transform: scale(.8);
+    }
+}
+
 @media screen and (max-width: 540px) {
     .suportadvantage_row {
         width: var(--margin-md);

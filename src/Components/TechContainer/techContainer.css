@@ -264,6 +264,16 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    #tech_container .tech_row {
+        flex-direction: column;
+    }
+
+    .tech_row .tech_content {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #tech_container {
         width: 100%;

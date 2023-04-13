@@ -235,6 +235,16 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    #cdnmulti .cdnmulti_row {
+        width: var(--margin-sm);
+    }
+
+    .advantage_item .advantage_description_container {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #cdnmulti {
         width: 100%;

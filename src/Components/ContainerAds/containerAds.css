@@ -223,37 +223,190 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1660px) {
+#containerads .container_arrows {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+
+#containerads .prev {
+    height: 30px;
+    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: none;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: -10px;
+}
+
+#containerads .prev::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-right: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+    border-radius: 0px 3px 4px 3px;
+    width: 15px;
+    height: 15px;
+    -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    z-index: 0;
+}
+
+#containerads .next {
+    height: 30px;
+    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: none;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    right: -10px;
+    z-index: 1;
+}
+
+#containerads .next::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-right: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+    border-radius: 0px 3px 4px 3px;
+    width: 15px;
+    height: 15px;
+    -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+    z-index: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    #containerads .containerads_row {
+        width: var(--margin-sm);
+    }
+
     #containerads .containerads_row .containerads_advantage {
-        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        width: 985px;
+        margin: 5% auto;
+        height: 400px;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    #containerads .containerads_advantage .containerads_container_advantage {
+        width: 100%;
+        height: 347px;
+        flex-shrink: 1;
+        margin: 0px 28px;
+    }
+
+    #containerads .prev {
+        display: flex;
+    }
+
+    #containerads .next {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #containerads .container_arrows {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    #containerads .container_arrows {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    #containerads .containerads_row .containerads_advantage {
+        width: 730px;
+    }
+
+    #containerads .container_arrows {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    #containerads .container_arrows {
+        width: 90%;
+    }
+
+    #containerads .containerads_row .containerads_advantage {
+        width: 737px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #containerads .container_arrows {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #containerads .container_arrows {
+        width: 80%;
+    }
+
+    #containerads .containerads_row .containerads_advantage {
+        width: 492px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    #containerads .container_arrows {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    #containerads .container_arrows {
+        width: 85%;
+    }
+
+    #containerads .containerads_row .containerads_advantage {
+        width: 246px;
     }
 }
 
 @media screen and (max-width: 540px) {
-
-    #containerads {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    #containerads .containerads_row {
-        width: var(--margin-sm);
-        margin: 10% auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
 
     #containerads .containerads_row p {
         font-size: 24px;
@@ -268,195 +421,5 @@
         font-weight: 600;
         text-transform: uppercase;
         color: var(--red);
-    }
-
-    #containerads .containerads_row .containerads_advantage {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        gap: 50px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 5% 0 20%;
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage {
-        width: 174px;
-        height: 347px;
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(2) .containerads_advantage_icon {
-        background-color: var(--middle-dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(2) .containerads_advantage_description span {
-        color: var(--middle-dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(2) .containerads_advantage_description {
-        border-color: var(--middle-dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(3) .containerads_advantage_icon {
-        background-color: var(--dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(3) .containerads_advantage_description span {
-        color: var(--dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(3) .containerads_advantage_description {
-        border-color: var(--dark-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(4) .containerads_advantage_icon {
-        background-color: var(--black-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(4) .containerads_advantage_description span {
-        color: var(--black-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(4) .containerads_advantage_description {
-        border-color: var(--black-red);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(5) .containerads_advantage_icon {
-        background-color: var(--black);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(5) .containerads_advantage_description span {
-        color: var(--black);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage:nth-child(5) .containerads_advantage_description {
-        border-color: var(--black);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage::after {
-        content: '';
-        position: absolute;
-        top: 40px;
-        width: 50%;
-        height: 5px;
-        background: var(--white);
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage .containerads_advantage_icon {
-        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-        position: relative;
-        width: 80px;
-        height: 80px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        background-color: var(--red);
-        z-index: 1;
-        top: 40px;
-        padding: 20px;
-    }
-
-    #containerads .containerads_advantage .containerads_container_advantage .containerads_advantage_icon img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-
-    #containerads .containerads_container_advantage .containerads_advantage_description {
-        width: 190px;
-        height: 345px;
-        max-width: 190px;
-        max-height: 345px;
-        min-height: 345px;
-        border: 3px solid var(--red);
-        border-radius: 10px;
-        padding: 70px 10px 30px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #containerads .containerads_container_advantage .containerads_advantage_description span {
-        font-size: 28px;
-        font-weight: 600;
-        color: var(--red);
-        width: 45px;
-        height: 45px;
-        min-width: 45px;
-        min-height: 45px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        background-color: var(--ligh-gray-alpha);
-        border-radius: 50%;
-        position: relative;
-        text-align: center;
-    }
-
-    #containerads .containerads_container_advantage .containerads_advantage_description h6 {
-        font-size: var(--xsm);
-        font-weight: 600;
-        text-align: center;
-        color: var(--gray);
-        text-transform: uppercase;
-        line-height: 24px;
-    }
-
-    #containerads .containerads_container_advantage .containerads_advantage_description p {
-        font-size: var(--xsm);
-        line-height: 16px;
-        color: var(--gray);
-        font-weight: 400;
-        text-transform: math-auto;
-        text-align: center;
     }
 }

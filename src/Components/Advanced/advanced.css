@@ -627,6 +627,12 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    .advanced_infographic_container {
+        transform: scale(.55);
+    }
+}
+
 @media screen and (max-width: 540px) {
 
     .advanced_row .title_section p {

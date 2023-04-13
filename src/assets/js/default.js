@@ -96,6 +96,44 @@ if (carouselPage) {
 
 }
 
+//CAROUSEL MOBILE CDN 
+const containerads = document.getElementById('containerads');
+
+if (containerads) {
+    const containerItems = document.querySelector('.containerads_advantage');
+    const containerItem = document.querySelectorAll('.containerads_container_advantage');
+    const prevButton = document.querySelector('.container_arrows .prev')
+    const nextButton = document.querySelector('.container_arrows .next')
+
+    prevButton.addEventListener('click', () => {
+        containerItems.scrollLeft -= containerItems.offsetWidth;
+    });
+
+    nextButton.addEventListener('click', () => {
+        containerItems.scrollLeft += containerItems.offsetWidth;
+    });
+
+    let screenWidth = window.screen.width; // DESCOBRE A LARGURA DA TELA
+    let quantity // DEFINE A QUANTIDADE DE ITEM NO CARROSSEL
+
+    if (screenWidth <= 594) { // CONDICIONAL PARA EXIBIR OS ITENS DE MANEIRA RESPONSIVA
+        quantity = 1;
+    } else if (screenWidth <= 980) {
+        quantity = 2;
+    } else if (screenWidth <= 1000) {
+        quantity = 3;
+    } else if (screenWidth <= 1280) {
+        quantity = 4;
+    }
+
+
+    let itemWidth = 100 / quantity; // FAZ O TAMANHO TOTAL DO CONTAINER DIVIDIDO PELA QUANTIDADE DE ITENS
+
+    containerItem.forEach(item => {
+        item.style.width = `calc(${itemWidth}%)`; // AQUI DEFINE QUE O OS ITENS VAO TER O TAMANHO EXATO PARA SE DIVIDIR DENTRO DO CONTAINER IGUALMENTE
+    })
+}
+
 // ANIMATIONS SCROLL IMAGES
 const images = document.querySelector('img');
 
