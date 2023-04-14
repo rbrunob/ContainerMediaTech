@@ -51,3 +51,23 @@ RewriteRule ^blog-en$ ./index.php?page=15&language=2
 
 RewriteRule ^blog-en/([a-z0-9]+)?$ ./index.php?page=16&title=$1&language=2 [NC,QSA]
 ## FIM
+
+## menu es
+RewriteRule ^home-es$ ./index.php?page=17&language=3
+
+RewriteRule ^es$ ./index.php?page=17&language=3
+
+RewriteRule ^acerca-de-nosotros-es$ ./index.php?page=18&language=3
+
+RewriteRule ^cdn-es$ ./index.php?page=19&language=3
+
+RewriteRule ^nuestros-casos-es$ ./index.php?page=20&language=3
+
+RewriteRule ^personalizacion-es$ ./index.php?page=21&language=3
+
+RewriteRule ^catalogo-es$ ./index.php?page=22&language=3
+
+RewriteRule ^blog-es$ ./index.php?page=23&language=3
+
+RewriteRule ^blog-es/([a-z0-9]+)?$ ./index.php?page=24&title=$1&language=3 [NC,QSA]
+## FIM
