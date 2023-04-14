@@ -1,7 +1,7 @@
 <section id="yrplataform">
     <div class="yrplataform_row">
         <div class="title_container">
-            <h3 class="title">Uma <span>Plataforma</span> com a sua cara</h3>
+            <h3 class="title">UNA <span>PLATAFORMA</span> CON TU MARCA</h3>
         </div>
         <div class="mockup_container">
             <div class="video_and_img out-in top">
@@ -13,8 +13,8 @@
         </div>
         <div class="decription_container">
             <div class="description_content">
-                <p class="description">Uma plataforma personalizada com a sua marca, capaz de integrar e oferecer aos seus usuários links diretos para seus produtos e serviços.</p>
-                <p class="description">Uma solução integrada de serviços de marketing, com criação de conteúdo original, vídeos institucionais e promocionais “para sua empresa”!</p>
+                <p class="description">Una plataforma personalizada con su marca, capaz de integrar y ofrecer a sus usuarios enlaces directos a sus productos y servicios.</p>
+                <p class="description">¡Una solución integrada de servicios de marketing, con contenido original, videos institucionales y promocionales "para su empresa"!</p>
             </div>
         </div>
     </div>

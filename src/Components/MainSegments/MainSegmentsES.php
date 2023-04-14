@@ -1,7 +1,7 @@
 <section id="mainSegments">
     <div class="mainsegments_row">
         <div class="title">
-            <h5>Principais Segmentos</h5>
+            <h5>PRINCIPAIS SEGMENTOS</h5>
         </div>
         <div class="mainsegments_content">
             <div class="mainsegments_item">

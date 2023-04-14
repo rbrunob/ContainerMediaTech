@@ -36,11 +36,11 @@
         </div>
         <div class="techpartners_content">
             <div class="techpartners_content_container">
-                <h5 class="title">Parceiros Tecnológicos</h5>
+                <h5 class="title">TECH PARTNERS</h5>
                 <p class="description">
-                    A Container Media trabalha com grandes empresas de tecnologia e de distribuição de produtos OTT e VOD. Buscando sempre a melhor qualidade em nossas plataformas e as melhores soluções em gerenciamento de usuários, monetização, storage, billing, personalização e marketing. Clique abaixo para conhecer a plataforma!
+                    Container Media partners with the best tech companies and OTT and VOD products distributors. We are always looking for the best quality for our platforms and the best solutions for user management, monetization, storage, billing, personalization, and marketing. Click below to learn about the platform!
                 </p>
-                <a href="https://containermediaplay.com.br/" class="btn_techpartners" target="_blank">Conheça a plataforma</a>
+                <a href="https://containermediaplay.com.br/" class="btn_techpartners" target="_blank">ENJOY THE PLATFORM</a>
             </div>
         </div>
     </div>

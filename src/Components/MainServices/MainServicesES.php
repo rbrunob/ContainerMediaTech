@@ -1,14 +1,14 @@
 <section id="mainServices">
     <div class="mainservices_row">
-        <h5 class="title">principais serviços</h5>
+        <h5 class="title">PRINCIPALES SERVICIOS</h5>
         <div class="container_mainservices">
             <div class="item">
                 <div class="image_item">
                     <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/lamp-services.webp" alt="Item" loading="lazy" />
                 </div>
                 <div class="descriptions_item">
-                    <p class="title">Promoção de Conteúdos</p>
-                    <p class="description">Promoção de conteúdos de acordo com pesquisas de acesso</p>
+                    <p class="title">Promoción de contenido</p>
+                    <p class="description">Promoción de contenido de acuerdo con las búsquedas de acceso</p>
                 </div>
             </div>
             <div class="item">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="descriptions_item">
                     <p class="title">E-mail Marketing</p>
-                    <p class="description">Elaboração e disparo de e-mail marketings promocionais</p>
+                    <p class="description">Redacción y lanzamiento de email marketing promocionales</p>
                 </div>
             </div>
             <div class="item">
@@ -25,8 +25,8 @@
                     <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/video-services.webp" alt="Item" loading="lazy" />
                 </div>
                 <div class="descriptions_item">
-                    <p class="title">Campanhas Promocionais</p>
-                    <p class="description">Criação de propostas e gerenciamento das campanhas</p>
+                    <p class="title">Campañas promocionales</p>
+                    <p class="description">Creación de propuestas y gestión de campañas</p>
                 </div>
             </div>
         </div>

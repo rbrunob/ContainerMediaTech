@@ -32,13 +32,14 @@ if ($resultMenu->num_rows > 0) {
         <nav class="header_nav">
             <div class="nav_item">
                 <?
-                    for ($i = 0; $i < count($pageMenu); $i++) {
-                       
-                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
-                       
-                    }
-                ?>
-                <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
+                for ($i = 0; $i < count($pageMenu); $i++) {
+
+                ?><a href="<? echo $urlSite;
+                            echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+
+                                                                                            }
+                                                                                                ?>
+                <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">CONOZCA LA PLATAFORM</a>
             </div>
             <div class="nav_mobile">
                 <div class="nav_menu">
@@ -48,13 +49,14 @@ if ($resultMenu->num_rows > 0) {
                 </div>
                 <div class="nav_content">
                     <?
-                      for ($i = 0; $i < count($pageMenu); $i++) {
-                       
-                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
-                       
-                        }
-                    ?>
-                    <a href="https://containermediaplay.com.br/" target="_blank">conheça a plataforma</a>
+                    for ($i = 0; $i < count($pageMenu); $i++) {
+
+                    ?><a href="<? echo $urlSite;
+                                echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+
+                                                                                                }
+                                                                                                    ?>
+                    <a href="https://containermediaplay.com.br/" target="_blank">CONOZCA LA PLATAFORM</a>
                 </div>
             </div>
         </nav>

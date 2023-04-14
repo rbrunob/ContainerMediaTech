@@ -1,6 +1,6 @@
 <section id="channels">
   <div class="channels_row">
-    <h5 class="title">Canais Lineares</h5>
+    <h5 class="title">CANALES LINEALES</h5>
     <?
     $query2 = "SELECT * FROM section_block
        INNER JOIN sections ON section_block.`section_id` = sections.id_section

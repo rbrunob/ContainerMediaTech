@@ -10,7 +10,7 @@
         </div>
         <div class="footer_sections">
             <div class="footer_contacts">
-                <h6>Entre em contato</h6>
+                <h6>CONTACTENOS</h6>
                 <div class="footer_contacts_itens">
                     <div class="item">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-mail.svg" alt="E-mail" loading="lazy" />
@@ -29,7 +29,7 @@
         </div>
         <div class="footer_sections">
             <div class="footer_social_media">
-                <h6>Siga a Container</h6>
+                <h6>SEGUIR CONTAINER</h6>
                 <div class="footer_social_media_itens">
                     <a href="#">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-instagram.svg" alt="Icon Instagram" loading="lazy" />

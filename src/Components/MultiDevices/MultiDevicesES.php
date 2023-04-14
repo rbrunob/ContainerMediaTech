@@ -2,9 +2,9 @@
     <div class="multidevices_row">
         <div class="multidevices_content">
             <div class="content_container">
-                <h5 class="title">Somos <span>Multi-devices</span></h5>
+                <h5 class="title">SOMOS <span>MULTIPLE DISPOSITIVOS</span></h5>
                 <p class="description">
-                    Sua Plataforma pode ser acessada em mobiles, TVs e desktops, além de estar disponível tanto na internet como nas principais lojas de apps.
+                    Se puede acceder a su plataforma a través de teléfonos móviles, televisores y computadoras. Tu Plataforma también está disponible tanto en Internet como en las principales tiendas de aplicaciones.
                 </p>
                 <div class="container_apps">
                     <a href="https://play.google.com/store/apps/details?id=tv.alphanetworks.beemix.androidtv.container" aria-label="Play Store" target="_blank">

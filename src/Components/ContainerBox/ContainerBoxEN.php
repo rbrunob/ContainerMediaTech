@@ -5,16 +5,14 @@
         </div>
         <div class="containerBox_content">
             <div class="containerBox_texts">
-                <h3 class="title">CONTAINER MEDIA E BOX BRAZIL MEDIA GROUP</h3>
+                <h3 class="title">CONTAINER MEDIA AND BOX BRAZIL GROUP</h3>
                 <p class="description">
-                    A Container Media é uma Spin Off do Box Brazil Media Group.
-                    O Grupo atua nas áreas do entretenimento, tecnologia e inovação, com abrangência nacional e internacional. É formado pelas empresas Box Brazil Channels, Media Mundus, pela Box Brazil Play e pela Container Media USA.
-                    A Box Brazil Channels é a maior programadora independente brasileira. Está presente em mais de 98% do mercado Pay TV nacional, atingindo mais de 36 milhões de pessoas diariamente, através das principais operadoras do país, entre elas Claro, Vivo, SKY, Oi e afiliadas NEO.
-                    Programa e distribui 16 canais lineares no mercado brasileiro e internacional, sendo 6 para o segmento de TV por assinatura e 10 canais para o segmento de Plataformas Streamings – OTT.
+                    Container Media is a spinoff of Box Brazil.
+                    Box Brazil is the largest Brazilian independent programme, present in 98% of the Brazilian pay TV market, with 4 TV channels (Prime Box Brazil, Travel Box Brazil, Fashion TV and Music Box Brazil) and in the international market (Angola and Mozambique) it is present with BOOM TV channel.
                 </p>
             </div>
             <div class="containerBox_btn">
-                <a href="#">Conheça o Grupo</a>
+                <a href="#">LEARN ABOUT BOX BRAZIL</a>
             </div>
         </div>
     </div>

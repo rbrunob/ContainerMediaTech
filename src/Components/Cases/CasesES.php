@@ -14,46 +14,46 @@
                     </div>
                     <div class="item_description">
                         <p class="subtitle">
-                            PLATAFORMA 100% PERSONALIZADA COM A MARCA DA EQUIPE;
+                            PLATAFORMA 100% PERSONALIZADA CON LA MARCA DEL EQUIPO;
                         </p>
                         <p class="subtitle">
-                            INSERÇÃO DO CATÁLOGO DE CONTEÚDO DO EQUIPAMENTO;
+                            INSERCIÓN DEL CATÁLOGO DE CONTENIDOS DEL EQUIPO;
                         </p>
                         <p class="description">
-                            + 7000 CONTEÚDO SVOD E TVOD
-                            <span>FILMES, SÉRIES, SHOWS, ANIMAÇÕES E DOCUMENTÁRIOS.</span>
+                            + 7000 CONTENIDO SVOD Y TVOD
+                            <span>PELÍCULAS, SERIES, ESPECTÁCULOS, ANIMACIONES Y DOCUMENTALES.</span>
                         </p>
                         <p class="description">
-                            CATÁLOGOS 100% PERSONALIZÁVEIS:
-                            <span>BRASILEIRO, ESPETÁCULOS, CRIANÇAS, FILMES, SÉRIES;</span>
+                            CATÁLOGOS 100% PERSONALIZABLE:
+                            <span>BRASILEÑO, ESPECTÁCULOS, INFANTILES, PELÍCULAS, SERIES;</span>
                         </p>
                         <p class="description">
-                            RÁDIO ONLINE COM 24 HORAS DE PROGRAMAÇÃO 100% PERSONALIZADA:
-                            <span>POSSIBILIDADE DE PROGRAMAÇÃO AO VIVO;</span>
+                            RADIO ONLINE CON 24 HORAS DE PROGRAMACIÓN 100% PERSONALIZADA:
+                            <span>POSIBILIDAD DE PROGRAMACIÓN EN VIVO;</span>
                         </p>
                         <p class="description">
-                            STREAMING DE CANAL LINEAR:
-                            <span>GRID COM PROGRAMAÇÃO DE CANAIS LINEARES;</span>
+                            STREAMING DE CANALES LINEALES:
+                            <span>CUADRÍCULA CON LA PROGRAMACIÓN DE CANALES LINEALES;</span>
                         </p>
                         <p class="description">
-                            CANAL OTT - 24 PROGRAMAÇÃO:
-                            <span>FUTEBOL, PROGRAMAÇÃO AO VIVO, ENTRETENIMENTO PARA TODA A FAMÍLIA;</span>
+                            CANAL OTT - 24 PROGRAMACIÓN:
+                            <span>FÚTBOL, PROGRAMACIÓN EN VIVO, ENTRETENIMIENTO PARA TODA LA FAMILIA;</span>
                         </p>
                         <p class="subtitle">
-                            CONTEÚDO EXCLUSIVO DO CLUBE E PLATAFORMA;
+                            CONTENIDOS EXCLUSIVOS DEL CLUB Y PLATAFORMA;
                         </p>
                         <p class="description">
-                            PLATAFORMA DE MÚLTIPLOS DISPOSITIVOS:
-                            <span>SMARPHONES, TABLETS E CHROMECAST (SOON SMART TV'S);</span>
+                            PLATAFORMA MULTIPLES DISPOSITIVOS:
+                            <span>SMARPHONES, TABLETS Y CHROMECAST (PRONTO SMART TV'S);</span>
                         </p>
                         <p class="subtitle">
-                            INSERÇÃO DE ANÚNCIOS;
+                            INSERCIÓN DE ANUNCIOS;
                         </p>
                         <p class="subtitle">
-                            SEU MERCADO: INTEGRAÇÃO COM APLICATIVOS ASSOCIADOS;
+                            SU MARKETPLACE: INTEGRACIÓN CON APLICACIONES ASOCIADAS;
                         </p>
                         <p class="subtitle">
-                            CRIAÇÃO E ADMINISTRAÇÃO DO SITE INSTITUCIONAL DA PLATAFORMA DE SUA EQUIPE;
+                            CREACIÓN Y ADMINISTRACIÓN DE WEBSITE INSTITUCIONAL DE LA PLATAFORMA DE SU EQUIPO;
                         </p>
                     </div>
                 </div>
@@ -68,27 +68,27 @@
                     </div>
                     <div class="item_description">
                         <p class="subtitle">
-                            MARKETPLACE DE CONTEÚDO BRASILEIRO;
+                            MARKETPLACE DE CONTENIDO BRASILEÑO;
                         </p>
                         <p class="description">
-                            + 2000 TÍTULOS DE SVOD E TVOD:
-                            <span>FILMES, SÉRIES, SHOWS, ANIMAÇÕES E DOCUMENTÁRIOS;</span>
+                            + 2000 TÍTULOS SVOD E TVOD:
+                            <span>PELÍCULAS, SERIES, ESPECTÁCULOS, ANIMACIONES Y DOCUMENTALES;</span>
                         </p>
                         <p class="subtitle">
-                            TRANSMISSÃO DOS PRINCIPAIS CANAIS DE TELEVISÃO DO BRASIL;
+                            TRANSMISIÓN DE LOS PRINCIPALES CANALES DE TELEVISIÓN BRASILEÑOS;
                         </p>
                         <p class="subtitle">
-                            GRADE DE PROGRAMAÇÃO:
+                            CUADRÍCULA DE PROGRAMACIÓN:
                         </p>
                         <p class="description">
-                            PLATAFORMA DE MÚLTIPLOS DISPOSITIVOS:
-                            <span>SMARTPHONES, TABLETS E CHROMECAST (SMART TV EM BREVE);</span>
+                            PLATAFORMA MULTIPLES DISPOSITIVOS:
+                            <span>SMARTPHONES, TABLETS Y CHROMECAST (MUY PRONTO SMART TV'S);</span>
                         </p>
                         <p class="subtitle">
-                            INSERÇÃO DE ANÚNCIOS;
+                            INSERCIÓN DE ANUNCIOS;
                         </p>
                         <p class="subtitle">
-                            POSSIBILIDADE DE ASSINATURA AGORA;
+                            POSIBILIDAD DE SUSCRIPCIÓN A TRAVÉS DE NOW;
                         </p>
                         <p class="subtitle">
                             LOGIN INTEGRADO;
@@ -106,15 +106,15 @@
                     </div>
                     <div class="item_description">
                         <p class="description">
-                            PLATAFORMA 100% PERSONALIZADA COM SUA MARCA E SUBMARCAS:
-                            <span>4 TECIDOS DE LOGIN, 4 PÁGINAS INICIAIS 100% PERSONALIZADAS;</span>
+                            PLATAFORMA 100% PERSONALIZADA CON LA MARCA DEL EQUIPO;
+                            <span>4 TELAS DE LOGIN, 4 HOME PAGES 100% PERSONALIZADAS;</span>
                         </p>
                         <p class="description">
                             FLEXIBILIDADE NA FORMATAÇÃO DE PACOTES E PRODUTOS:
-                            <span>OFEREÇA PACOTES "DIFERENTES" PARA SUAS SUBMARCAS DISTRIBUÍDAS NA PLATAFORMA.</span>
+                            <span>OFEREÇA PACOTES "DIFERENTES" PARA SUAS SUBMARCAS DISTRIBUÍDAS DENTRO DA PLATAFORMA.</span>
                         </p>
                         <p class="description">
-                            + 7000 SVOD E TVOD CONTEUDS:
+                            + 7000 CONTEÚDOS SVOD e TVOD:
                             <span>FILMES, SÉRIES, SHOWS, ANIMAÇÕES E DOCUMENTÁRIOS;</span>
                         </p>
                         <p class="description">

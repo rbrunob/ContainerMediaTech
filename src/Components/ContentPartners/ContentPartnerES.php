@@ -1,6 +1,6 @@
 <section id="contentPartners">
     <div class="contentpartners_row">
-        <h3 class="title">Parceiros de conteúdo</h3>
+        <h3 class="title">SOCIOS DE CONTENIDO</h3>
         <div class="partners_container">
             <div class="partners_itens out-in left">
                 <div class="partners_item">

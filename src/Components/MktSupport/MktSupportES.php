@@ -4,9 +4,9 @@
             <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/marketing.webp" alt="Apoio de Marketing" loading="lazy" class="out-in left" />
         </div>
         <div class="container_content">
-            <h3 class="title">Apoio de marketing</h3>
+            <h3 class="title">SOPORTE DE MARKETING</h3>
             <p class="description">
-                A Container Media também fornece o serviço de Apoio de Marketing para a sua plataforma, elaborando estratégias promocionais e divulgando-as através de banners e thumbnails temáticos, além de emailling para promoção de conteúdos de destaque, divulgação de campanhas promocionais ou auxílio na conversão de assinantes.
+                Container Media también proporciona el servicio de Soporte de Marketing para su plataforma, desarrollando estrategias promocionales y difundiéndolas a través de banners y thumbnails temáticas, y también apoyar los servicios de email para promocionar contenidos destacados, difusión de campañas promocionales o asistencia en la conversión de suscriptores.
             </p>
         </div>
     </div>

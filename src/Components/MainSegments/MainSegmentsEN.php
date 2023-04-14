@@ -1,7 +1,7 @@
 <section id="mainSegments">
     <div class="mainsegments_row">
         <div class="title">
-            <h5>Principais Segmentos</h5>
+            <h5>MAIN SEGMENTS</h5>
         </div>
         <div class="mainsegments_content">
             <div class="mainsegments_item">
@@ -10,10 +10,10 @@
                 </div>
                 <div class="item_texts">
                     <div class="item_title">
-                        Clubes de Futebol
+                        football clubs
                     </div>
                     <div class="item_description">
-                        Gerenciamento de Conteúdo de Clubes de Futebol + Conteúdo VOD
+                        Football Club Content Management + VOD Content
                     </div>
                 </div>
             </div>
@@ -23,10 +23,10 @@
                 </div>
                 <div class="item_texts">
                     <div class="item_title">
-                        Marcas
+                        brands
                     </div>
                     <div class="item_description">
-                        Conteúdo Institucional + Conteúdo VOD + Canais Ao Vivo
+                        Institutional Content + VOD Content + Live Channels
                     </div>
                 </div>
             </div>
@@ -36,10 +36,10 @@
                 </div>
                 <div class="item_texts">
                     <div class="item_title">
-                        Provedores de internet
+                        Internet Service Provider
                     </div>
                     <div class="item_description">
-                        Conteúdo Institucional + Conteúdo VOD + Canais Ao Vivo
+                        Institutional Content + VOD Content + Live Channels
                     </div>
                 </div>
             </div>

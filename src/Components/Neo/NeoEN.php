@@ -3,10 +3,10 @@
         <div class="neo_content">
             <div class="description_container">
                 <p class="description">
-                    <span>Somos associados NEO.</span> Credibilidade,
+                    <span>SWe are NEO members.</span> Credibility,
                 </p>
                 <p class="description">
-                    representatividade e abrangência nacional.
+                    representativeness and national coverage
                 </p>
             </div>
         </div>

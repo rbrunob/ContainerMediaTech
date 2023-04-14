@@ -5,10 +5,10 @@
         </div>
         <div class="containersolution_content_container">
             <div class="containersolution_content">
-                <h2 class="title">SOLUÇÃO CONTAINER MEDIA PARA SUA EMPRESA</h2>
-                <p class="description">Uma central de entretenimento e de fidelização de seu cliente, dispondo de canais de PayTV ao vivo, conteúdos SVOD, TVOD e PVOD dos maiores estúdios de Hollywood incluindo séries e filmes, nacionais e latino-americanos, além de APPs integrados, rádios online, Podcasts e muito mais.</p>
-                <p class="description">Container Media fica responsável por toda a gestão, suporte e operação da plataforma.</p>
-                <a href="https://containermediaplay.com.br/" class="containersolution_btn" target="_blank">Conheça a PLATAFORMAS</a>
+                <h2 class="title">MEDIA CONTAINER SOLUTION FOR YOUR COMPANY</h2>
+                <p class="description">An entertainment and customer loyalty center, offering live PayTV channels, SVOD, TVOD and PVOD content from the major Hollywood studios including Brazilians and Latin-Americans series and movies, also providing integrated APPs, online radios, Podcasts and much more.</p>
+                <p class="description">Container Media is responsible for Platform management, support and operation.</p>
+                <a href="https://containermediaplay.com.br/" class="containersolution_btn" target="_blank">ENJOY THE PLATFORM</a>
             </div>
         </div>
     </div>

@@ -1,21 +1,21 @@
 <section id="liveChannelsCarousel">
     <div class="livechannelscarousel_row">
         <div class="descriptionlivechannels_container">
-            <h4 class="title">CANAIS AO VIVO E 7.500 CONTEÚDOS VOD.</h4>
+            <h4 class="title">LIVE CHANNELS AND 7.500 VOD CONTENT.</h4>
             <p class="description">
-                Variedade para todos os públicos com mais de 5.000 conteúdos SVOD (por assinatura mensal), mais de 500 títulos TVOD (aluguel de grandes lançamentos de Hollywood), mais de 2.000 conteúdos a la carte e canais ao vivo nacionais e internacionais!
+                Content variety for all audiences: more than 5,000 SVOD (subscription) content, more than 500 TVOD – major Hollywood (transactional content – major Hollywood release), more than 2,000 “a la carte” Brazilian and International contents and live channels.
             </p>
         </div>
         <div class="livechannel_carouselcontainer">
             <div class="carouselcontainer_navigation">
                 <button class="navigation_item active" data-index="0">
-                    <p>Filmes</p>
+                    <p>movie</p>
                 </button>
                 <button class="navigation_item" data-index="1">
-                    <p>Séries</p>
+                    <p>series</p>
                 </button>
                 <button class="navigation_item" data-index="2">
-                    <p>Shows</p>
+                    <p>concerts</p>
                 </button>
                 <button class="navigation_item" data-index="3">
                     <p>Kids</p>

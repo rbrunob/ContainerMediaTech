@@ -1,13 +1,13 @@
 <section id="mktCustom">
     <div class="mktcustom_row">
         <div class="container_title">
-            <h1 class="title">PERSONALIZAÇÃO E MARKETING</h1>
+            <h1 class="title">PERSONALIZACIÓN Y MARKETING</h1>
         </div>
         <div class="container_mktcontent">
             <div class="texts">
-                <h2 class="title_text">Personalização de plataforma</h2>
+                <h2 class="title_text">PERSONALIZACIÓN DE LA PLATAFORMA</h2>
                 <p class="description_text">
-                    A Container Media customiza a sua plataforma multi-device com e look and feel de sua identidade visual , auxiliando a sua base a se identificar com o produto, solidificando sua marca e reforçando sua relação com o cliente.
+                    Container Media personaliza su plataforma multidispositivo con su identidad visual, ayudando a su base a identificarse con el producto, solidificando su marca y fortaleciendo su relación con el cliente.
                 </p>
             </div>
             <div class="image_mktcontainer">
