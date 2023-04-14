@@ -120,6 +120,7 @@
     -o-transition: var(--transition);
     transition: var(--transition);
     font-weight: 400;
+    pointer-events: none;
 }
 
 .livechannel_carouselcontainer .carouselcontainer_navigation .navigation_item:hover {

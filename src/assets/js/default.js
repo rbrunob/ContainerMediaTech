@@ -43,16 +43,40 @@ if (liveCarousel) {
     };
 
     carouselButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const index = btn.getAttribute('data-index');
+
+        btn.addEventListener("touchstart", handleTouchInitial, false);
+        btn.addEventListener("touchend", handleTouchEnd, false);
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleTouchInitial(event) {
+            touchStartX = event.touches[0].clientX;
+            console.log(event.touches[0].clientX)
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].clientX;
+            console.log(event.changedTouches[0].clientX)
+
             const select = document.getElementsByClassName('carouselcontainer_navigation')[0].getElementsByClassName('active')[0];
 
             if (select) {
                 select.classList.remove('active');
             }
+
             btn.classList.add('active');
 
-            moveCarousel(index);
+            const index = btn.getAttribute('data-index');
+
+            moveCarousel(index)
+        }
+
+        btn.addEventListener('click', () => {
+            // const index = btn.getAttribute('data-index');
+
+
+            // moveCarousel(index);
         })
     })
 }
@@ -66,6 +90,40 @@ if (carouselPage) {
     const carouselItems = document.querySelectorAll('.carousel_item');
     const prevButton = document.querySelector('.carousel_container .prev');
     const nextButton = document.querySelector('.carousel_container .next');
+
+    carouselContainer.addEventListener("touchstart", handleTouchStart, false);
+    carouselContainer.addEventListener("touchmove", handleTouchMove, false);
+
+    let initialX = null;
+    let initialY = null;
+
+    function handleTouchStart(event) {
+        initialX = event.touches[0].clientX;
+        initialY = event.touches[0].clientY;
+    }
+
+    function handleTouchMove(event) {
+        if (!initialX || !initialY) {
+            return;
+        }
+
+        let currentX = event.touches[0].clientX;
+        let currentY = event.touches[0].clientY;
+
+        let xDiff = initialX - currentX;
+        let yDiff = initialY - currentY;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff > 0) {
+                carouselContainer.scrollLeft += carouselContainer.offsetWidth;
+            } else {
+                carouselContainer.scrollLeft -= carouselContainer.offsetWidth;
+            }
+        }
+
+        initialX = null;
+        initialY = null;
+    }
     // SEMPRE MOVE O ITEM BASEADO NO TAMANHO DELE MESMO PARA A ESQUERDA, SEJA POSITIVO OU NEGATIVO O VALOR
     // NEGATIVO E POSITIVO NO VALOR FAZ DAR O EFEITO DE IR PARA A DIREITA E ESQUERDA
     prevButton.addEventListener('click', () => {
@@ -312,4 +370,9 @@ menu.addEventListener('click', () => {
 
 })
 
-// CONTAGEM DE ACESSOS AS NOTICIAS
+// TESTE TOUCH CAROUSEL RESOLVENDO NOS IOS
+
+const carouselContainer = document.querySelector('.content_carousel');
+const carouselItems = document.querySelectorAll('.carousel_item');
+
+
