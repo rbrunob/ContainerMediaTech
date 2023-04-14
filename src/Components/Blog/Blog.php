@@ -58,6 +58,6 @@
             echo "nenhum bloco encontrado ";
         }
         ?>
-        <a href="https://preprod.containermedia.com.br/containermediatech/index?page=7" class="btn_blog">Explorar</a>
+        <a href="https://preprod.containermedia.com.br/containermediatech/blog" class="btn_blog">Explorar</a>
     </div>
 </section>
