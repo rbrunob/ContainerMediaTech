@@ -323,31 +323,6 @@
         text-transform: uppercase;
     }
 
-    .cdnedge_content .cdnedge_description {
-        width: 100%;
-        max-width: 650px;
-        height: auto;
-        background-image: -webkit-gradient(linear, left top, right top, from(#e3e3e3), to(transparent));
-        background-image: -o-linear-gradient(left, #e3e3e3, transparent);
-        background-image: linear-gradient(to right, #e3e3e3, transparent);
-        padding: 20px;
-        border-radius: 20px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
     .cdnedge_description .description_item {
         display: -webkit-box;
         display: -ms-flexbox;

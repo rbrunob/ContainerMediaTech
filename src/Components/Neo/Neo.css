@@ -54,6 +54,7 @@
     font-size: var(--lg);
     font-weight: 400;
     color: var(--gray);
+    text-align: end;
 }
 
 .neo_content .description_container .description span {

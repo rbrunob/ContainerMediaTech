@@ -115,14 +115,7 @@
     }
 
     .partner_row h5::after {
-        content: '';
-        border-bottom: 1px solid var(--gray);
-        width: 350px;
-        height: 1px;
-        position: absolute;
-        bottom: 0px;
-        margin: 0 auto;
-        left: 400px;
+        display: none;
     }
 
     .partner_row h5 span {

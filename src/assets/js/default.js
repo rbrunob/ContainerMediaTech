@@ -43,6 +43,7 @@ if (liveCarousel) {
     };
 
     carouselButtons.forEach(btn => {
+        const index = btn.getAttribute('data-index');
 
         btn.addEventListener("touchstart", handleTouchInitial, false);
         btn.addEventListener("touchend", handleTouchEnd, false);
@@ -52,12 +53,10 @@ if (liveCarousel) {
 
         function handleTouchInitial(event) {
             touchStartX = event.touches[0].clientX;
-            console.log(event.touches[0].clientX)
         }
 
         function handleTouchEnd(event) {
             touchEndX = event.changedTouches[0].clientX;
-            console.log(event.changedTouches[0].clientX)
 
             const select = document.getElementsByClassName('carouselcontainer_navigation')[0].getElementsByClassName('active')[0];
 
@@ -67,16 +66,19 @@ if (liveCarousel) {
 
             btn.classList.add('active');
 
-            const index = btn.getAttribute('data-index');
-
             moveCarousel(index)
         }
 
         btn.addEventListener('click', () => {
-            // const index = btn.getAttribute('data-index');
+            const select = document.getElementsByClassName('carouselcontainer_navigation')[0].getElementsByClassName('active')[0];
 
+            if (select) {
+                select.classList.remove('active');
+            }
 
-            // moveCarousel(index);
+            btn.classList.add('active');
+
+            moveCarousel(index);
         })
     })
 }
@@ -94,6 +96,7 @@ if (carouselPage) {
     carouselContainer.addEventListener("touchstart", handleTouchStart, false);
     carouselContainer.addEventListener("touchmove", handleTouchMove, false);
 
+    let screenWidth = window.screen.width; // DESCOBRE A LARGURA DA TELA
     let initialX = null;
     let initialY = null;
 
@@ -134,7 +137,7 @@ if (carouselPage) {
         carouselContainer.scrollLeft += carouselContainer.offsetWidth;
     });
 
-    let screenWidth = window.screen.width; // DESCOBRE A LARGURA DA TELA
+
     let quantity // DEFINE A QUANTIDADE DE ITEM NO CARROSSEL
 
     if (screenWidth <= 540) { // CONDICIONAL PARA EXIBIR OS ITENS DE MANEIRA RESPONSIVA

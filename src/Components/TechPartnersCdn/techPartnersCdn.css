@@ -216,13 +216,6 @@
         height: auto;
     }
 
-    .techpartners_row .techpartners_contents img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
     .techpartners_row .techpartners_contents h6 {
         font-size: 30px;
         color: var(--red);
