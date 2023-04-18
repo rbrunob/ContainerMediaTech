@@ -17,7 +17,7 @@
                 while ($row = $result->fetch_assoc()) {
                     $blockId = $row['block_id'];
             ?>
-                    <div class="<? echo 'content_carousel' ?>">
+                    <div class="content_carousel">
                         <?
                         $queryItems = "SELECT * FROM block_content
                         INNER JOIN blocks ON block_content.`block_id` = blocks.id_block

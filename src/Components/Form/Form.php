@@ -44,19 +44,19 @@
             </div>
         </div>
         <div class="form_submit_container">
-            <form action="POST">
+            <form method="post" action="./scr/includes/send-mail.php">
                 <div class="section">
                     <label for="name">
                         <div class="title_input">
                             Seu Nome <span>*</span>
                         </div>
-                        <input type="text" id="name" required />
+                        <input type="text" id="name" name="name" required />
                     </label>
                     <label for="company">
                         <div class="title_input">
                             Empresa <span>*</span>
                         </div>
-                        <input type="text" id="company" required />
+                        <input type="text" id="company" name="company" required />
                     </label>
                 </div>
                 <div class="section">
@@ -64,18 +64,18 @@
                         <div class="title_input">
                             E-mail <span>*</span>
                         </div>
-                        <input type="email" id="mail" required />
+                        <input type="email" id="mail" name="email" required />
                     </label>
                     <label for="phone">
                         <div class="title_input">
                             Telefone <span>*</span>
                         </div>
-                        <input type="text" id="phone" required />
+                        <input type="text" id="phone" name="phone" required />
                     </label>
                 </div>
                 <label for="site">
                     Site da empresa
-                    <input type="text" id="site" />
+                    <input type="text" id="site" name="site" />
                 </label>
                 <label for="message">
                     Sua Mensagem
