@@ -118,8 +118,9 @@ a {
 .footer_social_media .footer_social_media_itens {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 90%;
+    gap: 20px;
 }
 
 .footer_social_media .footer_social_media_itens a {

@@ -48,9 +48,6 @@ if (liveCarousel) {
         btn.addEventListener("touchstart", handleTouchInitial, false);
         btn.addEventListener("touchend", handleTouchEnd, false);
 
-        let touchStartX = 0;
-        let touchEndX = 0;
-
         function handleTouchInitial(event) {
             touchStartX = event.touches[0].clientX;
         }
@@ -372,10 +369,5 @@ menu.addEventListener('click', () => {
     })
 
 })
-
-// TESTE TOUCH CAROUSEL RESOLVENDO NOS IOS
-
-const carouselContainer = document.querySelector('.content_carousel');
-const carouselItems = document.querySelectorAll('.carousel_item');
 
 

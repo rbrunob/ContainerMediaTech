@@ -123,8 +123,8 @@
 }
 
 .techpartners_content_container .btn_techpartners {
-    width: 250px;
-    padding: 15px 0;
+    width: auto;
+    padding: 10px 15px;
     text-align: center;
     height: auto;
     color: var(--white);

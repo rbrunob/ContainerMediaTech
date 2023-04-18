@@ -1,51 +1,51 @@
 <section id="carouselPage">
     <div class="carouselpage_row">
         <div class="title_container">
-            <h4 class="title">CAMPAÑAS DE PLATAFORMAS CONTAINER</h4>
+            <h4 class="title">campanhas plataformas container</h4>
         </div>
         <div class="carousel_container">
             <div class="prev"></div>
+            <?
+            $query = "SELECT * FROM section_block
+            INNER JOIN sections ON section_block.`section_id` = sections.id_section
+            INNER JOIN blocks ON section_block.`block_id` = blocks.id_block
+            WHERE section_id = $id_section";
 
-            <div class="content_carousel">
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/premiados.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/trash.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/maratona_rock.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/premiados.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/trash.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/maratona_rock.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <!-- <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/ambulancia.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/chamas-da-vingança-poster.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/cidade-perdida.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/jurassic_world_poster.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/minions-2.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-                <div class="carousel_item">
-                    <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/sonic-2.webp" alt="Item Carrossel" loading="lazy" />
-                </div>
-            </div> -->
+            $result = $conn->query($query);
 
-                <div class="next"></div>
-            </div>
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $blockId = $row['block_id'];
+            ?>
+                    <div class="<? echo 'content_carousel' ?>">
+                        <?
+                        $queryItems = "SELECT * FROM block_content
+                        INNER JOIN blocks ON block_content.`block_id` = blocks.id_block
+                        INNER JOIN contents ON block_content.`content_id` = contents.id_content
+                        INNER JOIN images ON contents.`reference_id` = images.id_image
+                        WHERE block_id = $blockId";
+                        $resultItems = $conn->query($queryItems);
+
+                        if ($resultItems->num_rows > 0) {
+                            while ($rowItems = $resultItems->fetch_assoc()) {
+                        ?>
+                                <div class="carousel_item">
+                                    <img src="<? echo $rowItems['path_image'] ?>" alt="<? echo $rowItems['alt_image'] ?>" loading="lazy" />
+                                </div>
+                        <?
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                        ?>
+                    </div>
+            <?
+                }
+            } else {
+                echo "nenhum bloco encontrado";
+            }
+            ?>
+            <div class="next"></div>
         </div>
+    </div>
 </section>
