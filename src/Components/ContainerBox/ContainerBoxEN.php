@@ -12,7 +12,7 @@
                 </p>
             </div>
             <div class="containerBox_btn">
-                <a href="#">LEARN ABOUT BOX BRAZIL</a>
+                <a href="https://www.boxbrazil.tv.br/grupo-box-brazil.php">LEARN ABOUT BOX BRAZIL</a>
             </div>
         </div>
     </div>

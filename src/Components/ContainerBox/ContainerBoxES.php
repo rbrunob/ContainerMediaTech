@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div class="containerBox_btn">
-                <a href="#">Conheça o Grupo</a>
+                <a href="https://www.boxbrazil.tv.br/grupo-box-brazil.php">Conheça o Grupo</a>
             </div>
         </div>
     </div>

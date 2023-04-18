@@ -17,7 +17,7 @@
     justify-content: center;
     margin: 0 auto;
     padding: var(--padding-default);
-    gap: 50px;
+    gap: 20px;
 }
 
 .neo_content {
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1000px) {
     .neo_content {
-        width: 100%;
+        width: 55%;
     }
 
     .neo_content .description_container .description {
@@ -83,9 +83,9 @@
     }
 
     .neo_logo .logo img {
-        width: 100%;
+        width: 70%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
