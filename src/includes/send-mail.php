@@ -11,8 +11,45 @@ $time = date('H:i:s');
 
 $emailBody = "
  <style type='text/css'>
- 
- 
+    body {
+        margin:0px;
+        font-family:sans-serif;
+        font-size:12px;
+        color: #505050;
+    }
+    a{
+        color: #505050;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #FF0000;
+        text-decoration: none;
+    }
+
+    td {
+        border: none;
+        outline: none;
+    }
+
+    tr {
+        border: none;
+        outline: none;
+    }
+
+    tr:nth-child(1) {
+        display: none;
+    }
+
+    table {
+        border: none;
+        outline: none;
+    }
+
+    tbody {
+        border: none;
+        outline: none;
+        background: white;
+    }
 
  </style>
 
@@ -53,7 +90,7 @@ $emailBody = "
             </tr>
 
             <tr>
-                <td>Este e-mail foi enviado em <b>$date</b> às <b>$time</b></td>
+                <td>Este e-mail foi enviado em <b>$date</b> as <b>$time</b></td>
             </tr>
 
     </table>
@@ -61,19 +98,19 @@ $emailBody = "
  </html>
 ";
 
-$toSend = "contato@containermedia.com.br";
+$toSend = "contato@containermedia.net.br";
 $destionation = $toSend;
-$subject = "Contato através do site institucional";
+$subject = "Contato pelo do site institucional";
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From: $name <$email>';
+$headers .= "From: $name <$email>";
 
 $sendEmail = mail($destionation, $subject, $emailBody, $headers);
 
 if ($sendEmail) {
     $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-    echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+    echo " <meta http-equiv='refresh' content='0.1;URL=https://preprod.containermedia.com.br/containermediatech/home'>";
 } else {
     $mgm = "ERRO AO ENVIAR E-MAIL!";
     echo "";
