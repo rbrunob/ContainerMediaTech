@@ -118,6 +118,101 @@ header .header_row {
     display: none;
 }
 
+.languages {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+.languages .languages_options {
+    display: none;
+    position: absolute;
+    width: auto;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 0;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: self-start;
+    justify-content: center;
+    top: 45px;
+    gap: 0;
+    left: 0px;
+    box-shadow: -1px 1px 10px #00000030;
+}
+
+.languages .languages_options.active {
+    display: flex;
+}
+
+.languages .language_current {
+    background: #ffffff00;
+    border: none;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.languages .language_current img {
+    width: 100%;
+    height: auto;
+    padding: 5px 24px 5px 8px;
+}
+
+.languages .language_current :not(img) {
+    display: none;
+}
+
+.languages .language_current::after {
+    content: '';
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    transform: rotate(315deg);
+    z-index: 1;
+    right: 8px;
+}
+
+.languages .language_current:hover {
+    background: #ffffff30;
+}
+
+.languages .languages_options .laguagens_item {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 10px;
+    background: transparent;
+    transition: all .2s;
+}
+
+.languages .languages_options .laguagens_item .language_name {
+    color: var(--black);
+    font-weight: 500;
+    width: -webkit-fill-available;
+    height: inherit;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.languages .languages_options .laguagens_item:hover {
+    background: #0000001f;
+}
+
 @media screen and (max-width: 1135px) {
     .header_nav .nav_item {
         display: none;

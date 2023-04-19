@@ -370,4 +370,28 @@ menu.addEventListener('click', () => {
 
 })
 
+// LANGUAGE OPTIONS
+
+const buttonLanguage = document.querySelector('.language_current');
+const languageOptions = document.querySelector('.languages_options');
+const languageItems = document.querySelectorAll('.laguagens_item');
+const currentLanguageIcon = document.querySelector('.language_current img');
+
+buttonLanguage.addEventListener('click', () => {
+    languageOptions.classList.toggle('active');
+})
+
+languageItems.forEach((option) => {
+    option.addEventListener('click', () => {
+        let dataSet = option.getAttribute("data-language")
+        sessionStorage.setItem('language', dataSet);
+    })
+})
+
+let currentLanguage = sessionStorage.getItem('language');
+
+currentLanguageIcon.setAttribute('src', `https://preprod.containermedia.com.br/containermediatech/src/assets/images/${currentLanguage}.png`)
+
+
+
 
