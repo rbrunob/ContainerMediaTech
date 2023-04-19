@@ -32,13 +32,37 @@ if ($resultMenu->num_rows > 0) {
         <nav class="header_nav">
             <div class="nav_item">
                 <?
-                    for ($i = 0; $i < count($pageMenu); $i++) {
-                       
-                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
-                       
-                    }
-                ?>
+                for ($i = 0; $i < count($pageMenu); $i++) {
+
+                ?><a href="<? echo $urlSite;
+                            echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+
+                                                                                            }
+                                                                                                ?>
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
+                <div class="languages">
+                    <button class="language_current">
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.svg" alt="language" />
+                        <span>Português</span>
+                    </button>
+                    <ul class="languages_options">
+                        <li class="laguagens_item" data-language="bra">
+                            <a href="home" class="language_name">
+                                Português
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="ing">
+                            <a href="home-en" class="language_name">
+                                Inglês
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="esp">
+                            <a href="home-es" class="language_name">
+                                Espanhol
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="nav_mobile">
                 <div class="nav_menu">
@@ -48,12 +72,13 @@ if ($resultMenu->num_rows > 0) {
                 </div>
                 <div class="nav_content">
                     <?
-                      for ($i = 0; $i < count($pageMenu); $i++) {
-                       
-                        ?><a href="<? echo $urlSite; echo $pageMenu[$i]['link'] ?>"><?echo $pageMenu[$i]['name'] ?></a><?
-                       
-                        }
-                    ?>
+                    for ($i = 0; $i < count($pageMenu); $i++) {
+
+                    ?><a href="<? echo $urlSite;
+                                echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+
+                                                                                                }
+                                                                                                    ?>
                     <a href="https://containermediaplay.com.br/" target="_blank">conheça a plataforma</a>
                 </div>
             </div>
