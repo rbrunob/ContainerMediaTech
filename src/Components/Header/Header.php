@@ -42,7 +42,7 @@ if ($resultMenu->num_rows > 0) {
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
                 <div class="languages">
                     <button class="language_current">
-                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.svg" alt="language" />
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.png" alt="language" />
                         <span>Português</span>
                     </button>
                     <ul class="languages_options">
