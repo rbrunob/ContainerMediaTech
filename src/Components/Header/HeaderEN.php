@@ -35,11 +35,33 @@ if ($resultMenu->num_rows > 0) {
                 for ($i = 0; $i < count($pageMenu); $i++) {
 
                 ?><a href="<? echo $urlSite;
-                                    echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+                            echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
 
-                                                                                                                    }
-                                                                                                                        ?>
+                                                                                                    }
+                                                                                                        ?>
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">ENJOY THE PLATFORM</a>
+                <div class="languages">
+                    <button class="language_current">
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.png" alt="language" />
+                    </button>
+                    <ul class="languages_options">
+                        <li class="laguagens_item" data-language="bra">
+                            <a href="home" class="language_name">
+                                Portuguese
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="ing">
+                            <a href="home-en" class="language_name">
+                                English
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="esp">
+                            <a href="home-es" class="language_name">
+                                Spanish
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="nav_mobile">
                 <div class="nav_menu">
@@ -52,10 +74,10 @@ if ($resultMenu->num_rows > 0) {
                     for ($i = 0; $i < count($pageMenu); $i++) {
 
                     ?><a href="<? echo $urlSite;
-                                    echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
+                                echo $pageMenu[$i]['link'] ?>"><? echo $pageMenu[$i]['name'] ?></a><?
 
-                                                                                                                    }
-                                                                                                                        ?>
+                                                                                                    }
+                                                                                                        ?>
                     <a href="https://containermediaplay.com.br/" target="_blank">ENJOY THE PLATFORM</a>
                 </div>
             </div>

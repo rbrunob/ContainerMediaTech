@@ -43,7 +43,6 @@ if ($resultMenu->num_rows > 0) {
                 <div class="languages">
                     <button class="language_current">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.png" alt="language" />
-                        <span>Português</span>
                     </button>
                     <ul class="languages_options">
                         <li class="laguagens_item" data-language="bra">

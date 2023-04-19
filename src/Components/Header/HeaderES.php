@@ -40,6 +40,28 @@ if ($resultMenu->num_rows > 0) {
                                                                                             }
                                                                                                 ?>
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">CONOZCA LA PLATAFORM</a>
+                <div class="languages">
+                    <button class="language_current">
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.png" alt="language" />
+                    </button>
+                    <ul class="languages_options">
+                        <li class="laguagens_item" data-language="bra">
+                            <a href="home" class="language_name">
+                                portugués
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="ing">
+                            <a href="home-en" class="language_name">
+                                Inglés
+                            </a>
+                        </li>
+                        <li class="laguagens_item" data-language="esp">
+                            <a href="home-es" class="language_name">
+                                Español
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="nav_mobile">
                 <div class="nav_menu">
