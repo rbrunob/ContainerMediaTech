@@ -371,8 +371,6 @@ menu.addEventListener('click', () => {
 
 const buttonLanguage = document.querySelector('.language_current');
 const languageOptions = document.querySelector('.languages_options');
-const languageItems = document.querySelectorAll('.laguagens_item');
-const currentLanguageIcon = document.querySelector('.language_current img');
 
 buttonLanguage.addEventListener('click', () => {
     languageOptions.classList.toggle('active');
