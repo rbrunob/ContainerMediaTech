@@ -42,24 +42,40 @@ if ($resultMenu->num_rows > 0) {
                 <a href="https://containermediaplay.com.br/" target="_blank" class="btn_plataform">conheça a plataforma</a>
                 <div class="languages">
                     <button class="language_current">
-                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/bra.png" alt="language" />
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/<? if ($language == 1) {
+                                                                                                                    echo 'bra';
+                                                                                                                } else if ($language == 2) {
+                                                                                                                    echo 'ing';
+                                                                                                                } else if ($language == 3) {
+                                                                                                                    echo 'esp';
+                                                                                                                } ?>.png" alt="language" />
                     </button>
                     <ul class="languages_options">
-                        <li class="laguagens_item" data-language="bra">
-                            <a href="home" class="language_name">
-                                Português
-                            </a>
-                        </li>
-                        <li class="laguagens_item" data-language="ing">
-                            <a href="home-en" class="language_name">
-                                Inglês
-                            </a>
-                        </li>
-                        <li class="laguagens_item" data-language="esp">
-                            <a href="home-es" class="language_name">
-                                Espanhol
-                            </a>
-                        </li>
+                        <?
+                        $languagePages = "SELECT * FROM change_language
+                        INNER JOIN itens_menu ON change_language.item_menu_id = itens_menu.id_item_menu
+                        WHERE page_id = $page";
+                        $resultLanguages = $conn->query($languagePages);
+
+                        if ($resultLanguages->num_rows > 0) {
+
+                            while ($rowLanguage = $resultLanguages->fetch_assoc()) { ?>
+                                <li class="laguagens_item" data-language="<? if ($language == 1) {
+                                                                                echo 'bra';
+                                                                            } else if ($language == 2) {
+                                                                                echo 'ing';
+                                                                            } else if ($language == 3) {
+                                                                                echo 'esp';
+                                                                            } ?>">
+                                    <a href="<? echo $rowLanguage['link_item_menu']; ?>" class="language_name">
+                                        <? echo $rowLanguage['name_language']; ?>
+                                    </a>
+                                </li>
+                        <?   }
+                        } else {
+                            echo "Nenhuma Linguagem.";
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

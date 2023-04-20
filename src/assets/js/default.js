@@ -378,14 +378,3 @@ buttonLanguage.addEventListener('click', () => {
     languageOptions.classList.toggle('active');
 })
 
-languageItems.forEach((option) => {
-    option.addEventListener('click', () => {
-        let dataSet = option.getAttribute("data-language")
-        sessionStorage.setItem('language', dataSet);
-    })
-})
-
-let currentLanguage = sessionStorage.getItem('language');
-
-currentLanguageIcon.setAttribute('src', `https://preprod.containermedia.com.br/containermediatech/src/assets/images/${currentLanguage}.png`)
-
