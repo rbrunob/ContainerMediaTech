@@ -292,18 +292,15 @@ if (search) {
                     select.classList.remove('selected');
                     tagSearch = false; // DESATIVA A PESQUISA POR CATEGORIA E EXIBE TODAS AS NOTÍCIAS
                     urlAsync = newUrl + '/src/includes/get-search.php?currentCategory=null';
-                    console.log(lastElement)
                 } else if (select && lastElement.dataset.category != currentCategory) { // SE ALGUM BOTAO QUE SEJA DIFERENTE DO ATUAL FOI CLICADO EM CATEGORIA
                     lastElement.classList.remove('selected');
                     tagSearch = true;
                     urlAsync = newUrl + `/src/includes/get-search.php?currentCategory=${currentCategory}&tagSearch=${tagSearch}`;
                     lastElement = e.target;
-                    console.log(lastElement)
                 } else { // CASO NENHUM BOTÃO TENHA SIDO CLICADO
                     tagSearch = true;
                     urlAsync = newUrl + `/src/includes/get-search.php?currentCategory=${currentCategory}&tagSearch=${tagSearch}`;
                     lastElement = e.target;
-                    console.log(lastElement)
                 };
 
                 const categories = await fetch(urlAsync); // RECEBE A URL DE ACORDO COM A CONDICIONAL
@@ -391,7 +388,4 @@ languageItems.forEach((option) => {
 let currentLanguage = sessionStorage.getItem('language');
 
 currentLanguageIcon.setAttribute('src', `https://preprod.containermedia.com.br/containermediatech/src/assets/images/${currentLanguage}.png`)
-
-
-
 

@@ -40,6 +40,15 @@
     filter: brightness(0.6) blur(0px);
 }
 
+.postnew_content .content_texts .texts a {
+    color: var(--red);
+    font-size: var(--sm);
+}
+
+.postnew_content .content_texts .texts a:hover {
+    text-decoration: underline;
+}
+
 .postnew_row .postnew_title {
     width: 100%;
     height: auto;
