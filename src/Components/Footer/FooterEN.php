@@ -40,9 +40,10 @@
                     <a href="https://www.youtube.com/channel/UCZT-L2PWE2DkEAB1m4hGgKw" target="_blank">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-youtube.svg" alt="Icon Youtube" loading="lazy" />
                     </a>
-                    <!-- <a href="#">
-                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-whatsapp.svg" alt="Icon Whatsapp" loading="lazy" />
+                    <a href="https://www.linkedin.com/company/containermediaplay/mycompany/" target="_blank">
+                        <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-linkedin.svg" alt="Icon LinkedIn" loading="lazy" />
                     </a>
+                    <!--
                     <a href="#">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-twitter.svg" alt="Icon Twitter" loading="lazy" />
                     </a> -->

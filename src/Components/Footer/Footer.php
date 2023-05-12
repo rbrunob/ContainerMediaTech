@@ -40,7 +40,7 @@
                     <a href="https://www.youtube.com/channel/UCZT-L2PWE2DkEAB1m4hGgKw" target="_blank">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-youtube.svg" alt="Icon Youtube" loading="lazy" />
                     </a>
-                    <a href="https://www.linkedin.com/company/containermediaplay/mycompany/">
+                    <a href="https://www.linkedin.com/company/containermediaplay/mycompany/" target="_blank">
                         <img src="https://preprod.containermedia.com.br/containermediatech/src/assets/images/icon-linkedin.svg" alt="Icon LinkedIn" loading="lazy" />
                     </a>
                     <!-- 
