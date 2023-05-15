@@ -73,7 +73,7 @@ if ($resultMenu->num_rows > 0) {
                                 </li>
                         <?   }
                         } else {
-                            echo "Nenhuma Linguagem.";
+                            echo "";
                         }
                         ?>
                     </ul>
