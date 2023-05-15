@@ -37,7 +37,7 @@ RewriteRule ^home-en$ ./index.php?page=9&language=2
 
 RewriteRule ^en$ ./index.php?page=9&language=2
 
-RewriteRule ^who-we-are-en$ ./index.php?page=10&language=2
+RewriteRule ^about-us-en$ ./index.php?page=10&language=2
 
 RewriteRule ^cdn-en$ ./index.php?page=11&language=2
 
